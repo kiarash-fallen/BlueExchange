@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import '../src/app/globals.css'
 
-function MyApp ({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
-    useEffect(() =>{
+    useEffect(() => {
         const isPrivateRoute = router.pathname.includes('/private');
 
         const checkIsAuthenticated = false;
@@ -13,9 +13,9 @@ function MyApp ({ Component, pageProps }) {
         if (isPrivateRoute && !checkIsAuthenticated) {
             router.push('/')
         }
-    },[router.pathname])
+    }, [router.pathname])
 
-    return <Component {...pageProps}/>
+    return <Component {...pageProps} />
 }
 
 export default MyApp;

@@ -11,7 +11,7 @@ body {
 }
 @font-face {
   font-family: Peyda;
-  src: url('../fonts/PeydaFaNum-SemiBold.ttf');
+  src: url('../../public/assests/fonts/PeydaFaNum-SemiBold.ttf');
 }
 .Blurred{
   display: none;
