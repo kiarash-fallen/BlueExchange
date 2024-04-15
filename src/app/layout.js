@@ -1,3 +1,4 @@
+import Navbar from "../../components/layout/Navbar";
 import "./globals.css";
 import '../../components/Embla/css/embla.css';
 
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="fa">
             <body>
+                <Navbar />
                 {children}
             </body>
         </html>
