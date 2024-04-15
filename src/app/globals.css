@@ -7,11 +7,17 @@ body {
   padding: 0;
   direction: rtl !important;
   background: #1E1E1E;
-  font-family: Peyda;
+  font-family: Peyda-Normal;
 }
+
 @font-face {
-  font-family: Peyda;
+  font-family: Peyda-Semibold;
   src: url('../../public/assests/fonts/PeydaFaNum-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Peyda-Normal;
+  src: url('../../public/assests/fonts/PeydaFaNum-Medium.ttf');
 }
 .Blurred{
   display: none;
