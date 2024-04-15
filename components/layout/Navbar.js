@@ -4,6 +4,7 @@ import Dropdown from "../ui/Dropdown";
 import UserHeadset from "../ui/icons/UserHeadset";
 import Button from "../buttons/Button";
 import User from "../ui/icons/User";
+import IconButton from "../buttons/IconButton";
 
 const Navbar = () => {
     return <nav className="px-5 py-4 flex justify-between">
@@ -33,9 +34,7 @@ const Navbar = () => {
 
         </div>
         <div className="flex items-center">
-            <span className=" size-11 flex justify-center items-center border border-[#414141] rounded-xl ml-4">
-                <UserHeadset />
-            </span>
+            <IconButton href="/test" icon={<UserHeadset />} />
             <Button
                 href="/"
                 hasRightIcon={true}
