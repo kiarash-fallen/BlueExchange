@@ -9,23 +9,52 @@ body {
   background: #1E1E1E;
   font-family: Peyda;
 }
+
+span {
+  display: inline-block;
+}
+
 @font-face {
   font-family: Peyda;
   src: url('../../public/assests/fonts/PeydaFaNum-SemiBold.ttf');
 }
-.Blurred{
+
+.Blurred {
   display: none;
 }
-.Button:hover > .Blurred{
+
+.Button:hover>.Blurred {
   display: block;
 }
-.Button:hover{
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(34,243,143,0.2);
--moz-box-shadow: 0px 0px 10px 0px rgba(34,243,143,0.2);
-box-shadow: 0px 0px 10px 0px rgba(34,243,143,0.2);
+
+.Button:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 243, 143, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(34, 243, 143, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(34, 243, 143, 0.2);
 }
-.BoxShadow{
-  -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.2);
--moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.2);
-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.2);
+
+.BoxShadow {
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
 }
+
+
+@layer components {}
+
+
+@layer base {
+  span {
+    @apply inline-block;
+  }
+}
+
+@layer utilities {
+  .blue-shadow {
+    box-shadow: 0px 6px 20px rgba(45, 116, 255, 0.16);
+  }
+}
+
+/* border-bottom: 1px solid #2D74FF; */
+
+
