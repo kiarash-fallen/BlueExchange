@@ -1,16 +1,18 @@
 "use client";
 import Image from "next/image";
-import SmallButton from "../../components/buttons/SmallButton";
-import EmblaCarousel from "../../components/Embla/EmblaCarousel";
 import TopServices from "../../components/layout/TopServices";
 import DigitalCurrencies from "../../components/layout/DigitalCurrencies";
 import Button from "../../components/buttons/Button";
+import Info from "../../components/home/Info";
+import Header from "../../components/home/Header";
 
 export default function Home() {
   
   return (
     <div className="">
-      {/* Top Services */}
+      {/* header */}
+      <Header />
+      <Info />
       <TopServices />
       <DigitalCurrencies />
       <div className="text-white w-11/12 mx-auto mt-48">
