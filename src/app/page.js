@@ -2,13 +2,16 @@
 import Image from "next/image";
 import SmallButton from "../../components/buttons/SmallButton";
 import EmblaCarousel from "../../components/Embla/EmblaCarousel";
+import Header from "../../components/home/Header";
 
 const OPTIONS = { dragFree: true, loop: true, align: 'start', direction: 'rtl' }
 
 export default function Home() {
-  
+
   return (
     <div className="">
+      {/* header */}
+      <Header />
       {/* Top Services */}
       <div className="w-11/12 border border-[#373737] rounded-[52px] m-auto p-9 text-white bg-[#323232] bg-opacity-35 flex">
         <div className="w-1/3">

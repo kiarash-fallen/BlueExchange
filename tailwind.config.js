@@ -8,7 +8,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // backgroundImage: {
+      //   'home': "url('/public/assets/images/bg/Home Page ( 1440 size ).png')",
+      // }
+    },
   },
   plugins: [],
 }
