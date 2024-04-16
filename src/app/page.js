@@ -5,6 +5,7 @@ import EmblaCarousel from "../../components/Embla/EmblaCarousel";
 import TopServices from "../../components/layout/TopServices";
 import DigitalCurrencies from "../../components/layout/DigitalCurrencies";
 import Header from "../../components/home/Header";
+import Info from "../../components/home/Info";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="">
       {/* header */}
       <Header />
+      <Info />
       {/* Top Services */}
       <TopServices />
       <DigitalCurrencies />

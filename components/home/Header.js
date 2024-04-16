@@ -6,21 +6,25 @@ import Coins from "../../public/assests/images/coins.svg"
 const Header = () => {
     return <header className="grid grid-cols-2">
         <div className="text-white">
-            <div className="flex justify-between">
-                <div className="self-center">
-                    <div className="flex items-center">
-                        <IconContainer color="bg-[#2D74FF]" border="border-[#2D74FF]">
-                            BEX
-                        </IconContainer>
-                        <p className="text-sm mr-4">هوشمند ترین پلتفرم صرافی دیجیتال</p>
+            <div className="flex justify-between ">
+                <div className="flex items-end mb-10">
+                    <div>
+                        <div className="flex items-center">
+                            <IconContainer color="bg-[#2D74FF]" border="border-[#2D74FF]">
+                                BEX
+                            </IconContainer>
+                            <p className="text-sm mr-4">هوشمند ترین پلتفرم صرافی دیجیتال</p>
+
+                        </div>
+                        <p className="font-semibold text-5xl mt-8">بیش از 125.025+</p>
                     </div>
-                    <p className="font-semibold text-5xl mt-8">بیش از 125.025+</p>
+
                 </div>
                 <div className="">
                     <Image src={Coins} width="auto" height={300} alt="coins" />
                 </div>
             </div>
-            <p className="font-light text-[40px] mt-4">تعداد معامله گرانی که به  <span className="font-semibold">بلواکسچنج</span> اعتماد کردن</p>
+            <p className="font-light text-[40px]">تعداد معامله گرانی که به  <span className="font-semibold">بلواکسچنج</span> اعتماد کردن</p>
             <p className="font-normal text-[#B0B0B0]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
             </p>
             <p className="font-normal text-[#B0B0B0] mt-2">بلکه
@@ -47,8 +51,15 @@ const Header = () => {
             </div>
         </div>
         <div>
-            <div className="radius-[32px]">
+            <div className="rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
+                <div className="w-[150px] h-[36px] bg-[#4B4B4B] m-auto rounded-b-3xl shadow-1">
+                    <p className="text-white text-center pt-[5px]">
+                        خرید ارز دیجیتال
+                    </p>
+                    <div>
 
+                    </div>
+                </div>
             </div>
         </div>
     </header >
