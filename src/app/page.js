@@ -4,6 +4,7 @@ import SmallButton from "../../components/buttons/SmallButton";
 import EmblaCarousel from "../../components/Embla/EmblaCarousel";
 import TopServices from "../../components/layout/TopServices";
 import DigitalCurrencies from "../../components/layout/DigitalCurrencies";
+import Header from "../../components/home/Header";
 
 export default function Home() {
 
