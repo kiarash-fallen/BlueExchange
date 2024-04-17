@@ -12,7 +12,7 @@ import PerfectMoney from "../../components/home/PerfectMoney";
 import CurvedArrow from "../../components/ui/icons/CurvedArrow";
 
 export default function Home() {
-
+  // i will fix the padding 
   return (
     <div className="">
       {/* header */}
