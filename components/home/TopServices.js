@@ -1,15 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
-import SmallButton from '../buttons/SmallButton'
+import Button from '../buttons/Button'
+import BEX from '../layout/BEX'
 
 function TopServices() {
   return (
     <div className="w-11/12 border border-[#373737] rounded-[52px] m-auto p-9 text-white bg-[#323232] bg-opacity-35 flex">
         <div className="w-1/3">
           <div className="flex items-center">
-            <div className=" bg-[#323232] w-fit border-b border-[#22F38F] rounded-[10px] p-2">
-              BEX
-            </div>
+            <BEX green={true}/>
             <h6 className="text-white pr-3">برترین ویژگی ها</h6>
           </div>
           <h1 className="text-4xl font-semibold mt-6">برترین خدماتی</h1>
@@ -19,9 +18,9 @@ function TopServices() {
             استفاده از طراحان گرافیک ا..
           </p>
           <div className="mt-10 flex">
-            <SmallButton>معامله تو شروع کن!</SmallButton>
+            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]">معامله تو شروع کن!</Button>
             <div className="mr-6">
-              <SmallButton>ارتباط با ما</SmallButton>
+              <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]">ارتباط با ما</Button>
             </div>
           </div>
         </div>
