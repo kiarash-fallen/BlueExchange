@@ -7,9 +7,10 @@ import Info from "../../components/home/Info";
 import Header from "../../components/home/Header";
 import BEX from "../../components/layout/BEX";
 import AboutBlueExchange from "../../components/home/AboutBlueExchange";
+import MostProfitableDigitalCurrencies from "../../components/home/MostProfitableDigitalCurrencies";
 
 export default function Home() {
-  
+
   return (
     <div className="">
       {/* header */}
@@ -17,6 +18,7 @@ export default function Home() {
       <Info />
       <TopServices />
       <DigitalCurrencies />
+      <MostProfitableDigitalCurrencies />
       <AboutBlueExchange />
       <div className="text-white mt-48 w-11/12 m-auto bg-[url('/assests/images/EasyTrade.png')] bg-no-repeat bg-left">
         <div className="flex">

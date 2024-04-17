@@ -2,6 +2,10 @@ import Image from "next/image";
 import Button from "../buttons/Button";
 import IconContainer from "../ui/IconContainer";
 import Coins from "../../public/assests/images/coins.svg"
+import Input from "../input/Input";
+import Select from "../ui/Select";
+import Rial from "../ui/icons/Rial";
+import BuyDigitalCurrency from "./BuyDigitalCurrency";
 
 const Header = () => {
     return <header className="grid grid-cols-2">
@@ -14,7 +18,6 @@ const Header = () => {
                                 BEX
                             </IconContainer>
                             <p className="text-sm mr-4">هوشمند ترین پلتفرم صرافی دیجیتال</p>
-
                         </div>
                         <p className="font-semibold text-5xl mt-8">بیش از 125.025+</p>
                     </div>
@@ -50,17 +53,8 @@ const Header = () => {
 
             </div>
         </div>
-        <div>
-            <div className="rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
-                <div className="w-[150px] h-[36px] bg-[#4B4B4B] m-auto rounded-b-3xl shadow-1">
-                    <p className="text-white text-center pt-[5px]">
-                        خرید ارز دیجیتال
-                    </p>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
+        <div className="flex justify-end items-center">
+            <BuyDigitalCurrency />
         </div>
     </header >
 }
