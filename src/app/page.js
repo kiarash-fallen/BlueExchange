@@ -7,6 +7,8 @@ import Info from "../../components/home/Info";
 import Header from "../../components/home/Header";
 import BEX from "../../components/layout/BEX";
 import AboutBlueExchange from "../../components/home/AboutBlueExchange";
+import PerfectMoney from "../../components/home/PerfectMoney";
+import CurvedArrow from "../../components/ui/icons/CurvedArrow";
 
 export default function Home() {
   
@@ -18,32 +20,66 @@ export default function Home() {
       <TopServices />
       <DigitalCurrencies />
       <AboutBlueExchange />
-      <div className="text-white mt-48 w-11/12 m-auto bg-[url('/assests/images/EasyTrade.png')] bg-no-repeat bg-left">
+      <PerfectMoney />
+      <div className="text-white w-11/12 m-auto bg-[#323232] bg-opacity-[36%] rounded-[52px] p-10 border border-[#373737]">
         <div className="flex">
-          <BEX green={false} />
-          <h6 className="my-auto mr-3">پرفکت مالی</h6>
+          <BEX />
+          <h6 className="my-auto mr-3">روندکاری ما</h6>
         </div>
-        <div className="flex text-3xl mt-6">
-          <h1>خرید و فروش آسان</h1>
-          <h1 className="font-semibold">پرفکت مالی در لحظه</h1>
+        <div className="flex mt-6">
+          <h1 className="text-3xl font-semibold">بلواکسچینج</h1>
+          <h1 className="text-3xl">در تمامی مراحل همراه شماست</h1>
         </div>
-        <div>
-          <p className="w-[45%] mt-6 leading-9">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است ...لورم ایپسوم متن ساختگی با تولید
-            سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-            و متون بلکه روزنام...
+        <div className="flex justify-between">
+          <p className="text-[#B0B0B0] mt-6">
+            شما میتوانید در اینجا تمامی مراحل شروع کاری ما از صفر تا صد را
+            مشاهده کنید و به راحتی آن ها را سپری کنید !
           </p>
-          <div className="flex mt-10">
-            <Button color="bg-[#2D74FF]" hover="hover:border-[#2D74FF]">
-              خرید پرفکت مانی
+          <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]">
+            معامله تو شروع کن !
+          </Button>
+        </div>
+        <div className="mt-12 flex justify-between relative">
+          <div className="w-[385.07px]">
+            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+              <div className="my-2">
+                <h4 className="text-white group-hover:text-[#22F38F]">
+                  1. ثبت نام در بیت کیو و ساخت پنل{" "}
+                </h4>
+                <p className="leading-9 text-white mt-4">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استف....
+                </p>
+              </div>
             </Button>
-            <div className="mr-6">
-              <Button color="bg-[#2D74FF]" hover="hover:border-[#2D74FF]">
-                معامله تو شروع کن
-              </Button>
-            </div>
+          </div>
+          <CurvedArrow fillColor="#0FB694" Placement="absolute right-[31%] bottom-[-30px] transform scale-x-[-1] rotate-180 bottom-2 stroke-[#0FB694]"/>
+          <div className="w-[385.07px] transf">
+            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+              <div className="my-2">
+                <h4 className="text-white group-hover:text-[#22F38F]">
+                  1. ثبت نام در بیت کیو و ساخت پنل{" "}
+                </h4>
+                <p className="leading-9 text-white mt-4">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استف....
+                </p>
+              </div>
+            </Button>
+          </div>
+          <CurvedArrow fillColor="#0FB694" Placement="absolute left-[31%] top-[-30px] stroke-white"/>
+          <div className="w-[385.07px]">
+            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+              <div className="my-2">
+                <h4 className="text-white group-hover:text-[#22F38F]">
+                  1. ثبت نام در بیت کیو و ساخت پنل{" "}
+                </h4>
+                <p className="leading-9 text-white mt-4">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استف....
+                </p>
+              </div>
+            </Button>
           </div>
         </div>
       </div>
