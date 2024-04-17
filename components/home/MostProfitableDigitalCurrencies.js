@@ -22,8 +22,8 @@ function MostProfitableDigitalCurrencies() {
             <div className="mt-10">
                 <PanelTabs list={[
                     { name: "روز ", content: <CurrencyCartContainer /> },
-                    { name: "ماه", content: <div>fuck</div> },
-                    { name: "سال", content: <div>this shit</div> },
+                    { name: "ماه", content: <CurrencyCartContainer /> },
+                    { name: "سال", content: <CurrencyCartContainer /> },
                 ]} />
             </div>
 
