@@ -5,7 +5,7 @@ function SecondButton({ children, color, hover, isDisable, type, size, href, has
   return (
     <>
       {href ? <Link
-        className={`w-full bg-[#2D74FF] py-2 text-white flex justify-center items-center rounded-xl`}
+        className={`w-full bg-[#2D74FF] py-2 text-white flex justify-center items-center rounded-xl shadow-blue`}
         href={href}>
         <span className='flex items-center'>
           {hasRightIcon ? <span className='ml-2'>{icon}</span> : ""}
@@ -15,7 +15,7 @@ function SecondButton({ children, color, hover, isDisable, type, size, href, has
 
         <span className={`w-1/3 h-2 bottom-0 blur-md rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}></span>
       </Link> : <button
-        className={`w-full bg-[#2D74FF] py-2 text-white flex justify-center items-center rounded-xl`}
+        className={`w-full bg-[#2D74FF] py-2 text-white flex justify-center items-center rounded-xl shadow-blue`}
         type={type}
         disabled={isDisable}
         onClick={onClick}

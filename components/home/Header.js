@@ -2,9 +2,6 @@ import Image from "next/image";
 import Button from "../buttons/Button";
 import IconContainer from "../ui/IconContainer";
 import Coins from "../../public/assests/images/coins.svg"
-import Input from "../input/Input";
-import Select from "../ui/Select";
-import Rial from "../ui/icons/Rial";
 import BuyDigitalCurrency from "./BuyDigitalCurrency";
 
 const Header = () => {

@@ -1,10 +1,11 @@
 import React from 'react'
 import IconContainer from '../ui/IconContainer'
 import PanelTabs from '../panel/PanelTabs'
+import CurrencyCartContainer from './CurrencyCartContainer'
 
 function MostProfitableDigitalCurrencies() {
     return (
-        <div className="mt-72">
+        <div className="mt-52">
             <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center">
                     <IconContainer color="bg-[#2D74FF]" border="border-[#2D74FF]">
@@ -18,11 +19,14 @@ function MostProfitableDigitalCurrencies() {
                 </p>
                 <p className='text-[#B0B0B0] mt-4'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک ا..</p>
             </div>
-            <PanelTabs list={[
-                { name: "روز " },
-                { name: "ماه" },
-                { name: "سال" },
-            ]} />
+            <div className="mt-10">
+                <PanelTabs list={[
+                    { name: "روز ", content: <CurrencyCartContainer /> },
+                    { name: "ماه", content: <div>fuck</div> },
+                    { name: "سال", content: <div>this shit</div> },
+                ]} />
+            </div>
+
         </div>
     )
 }

@@ -49,6 +49,11 @@ body {
   background-size: cover;
 }
 
+.currency-bg {
+  background: url("../../public/assests/Icons/polygan.svg");
+  background-size: cover;
+}
+
 .header-cart-background {
   background: rgba(50, 50, 50, 0.4);
 }
@@ -58,11 +63,25 @@ body {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
 }
 
+.shadow-blue {
+  box-shadow: 0px 6px 6px rgba(45, 116, 255, 0.12), inset 2px 2px 8px rgba(255, 255, 255, 0.12), inset -1px -1px 6px rgba(0, 0, 0, 0.12);
+
+}
+
+.green-shadow {
+  box-shadow: 0px 6px 16px rgba(34, 243, 143, 0.08);
+}
+
+.price-background {
+  background: rgba(62, 62, 62, 0.48);
+}
+
 .header-shadow-cart {
   -webkit-box-shadow: 0px 0px 44px rgba(255, 255, 255, 0.06);
   -moz-box-shadow: 0px 0px 44px rgba(255, 255, 255, 0.06);
   box-shadow: 0px 0px 44px rgba(255, 255, 255, 0.06);
 }
+
 
 @layer components {}
 

@@ -10,14 +10,16 @@ function PanelTabs({ list }) {
                         key={item.name}
                         type='button'
                         onClick={() => setActive(i)}
-                        className={`px-4 py-2 flex justify-center items-center rounded-xl ${active === i ? "bg-[#2D74FF]" : "bg-transparent"}`}>
+                        className={`px-4 py-2 flex justify-center items-center rounded-xl ${active === i ? "bg-[#2D74FF] shadow-blue" : "bg-transparent"}`}>
                         {item.name}
                     </button>)}
                 </span>
             </div>
-
+            <div className="mat-10">
+                {list.map((item, i) => <div key={item.name}>{i == active ? item.content : ""}</div>)}
+            </div>
         </>
     )
 }
 
-export default PanelTabs
+export default PanelTabs;

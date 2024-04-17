@@ -16,11 +16,18 @@ export default function Home() {
   return (
     <div className="">
       {/* header */}
-      <Header />
-      <Info />
+
+      <div className="px-4">
+        <Header />
+        <Info />
+      </div>
+
       <TopServices />
       <DigitalCurrencies />
-      <MostProfitableDigitalCurrencies />
+      <div className="px-4">
+        <MostProfitableDigitalCurrencies />
+      </div>
+
       <AboutBlueExchange />
       <PerfectMoney />
       <div className="text-white w-11/12 m-auto bg-[#323232] bg-opacity-[36%] rounded-[52px] p-10 border border-[#373737]">
