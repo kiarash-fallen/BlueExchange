@@ -10,6 +10,9 @@ import AboutBlueExchange from "../../components/home/AboutBlueExchange";
 import MostProfitableDigitalCurrencies from "../../components/home/MostProfitableDigitalCurrencies";
 import PerfectMoney from "../../components/home/PerfectMoney";
 import CurvedArrow from "../../components/ui/icons/CurvedArrow";
+import CurvedLine from "../../components/ui/icons/CurvedLine";
+import UserConsent from "../../components/home/UserConsent";
+import UserConsentContainer from "../../components/home/UserConsentContainer";
 
 export default function Home() {
   // i will fix the padding 
@@ -50,7 +53,12 @@ export default function Home() {
         </div>
         <div className="mt-12 flex justify-between relative">
           <div className="w-[385.07px]">
-            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+            <Button
+              color="bg-[#22F38F]"
+              hover="hover:border-[#22F38F]"
+              radius={true}
+              borderColor={true}
+            >
               <div className="my-2">
                 <h4 className="text-white group-hover:text-[#22F38F]">
                   1. ثبت نام در بیت کیو و ساخت پنل{" "}
@@ -62,9 +70,17 @@ export default function Home() {
               </div>
             </Button>
           </div>
-          <CurvedArrow fillColor="#0FB694" Placement="absolute right-[31%] bottom-[-30px] transform scale-x-[-1] rotate-180 bottom-2 stroke-[#0FB694]" />
+          <CurvedArrow
+            fillColor="#0FB694"
+            Placement="absolute right-[31%] bottom-[-30px] transform scale-x-[-1] rotate-180 bottom-2 stroke-[#0FB694]"
+          />
           <div className="w-[385.07px] transf">
-            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+            <Button
+              color="bg-[#22F38F]"
+              hover="hover:border-[#22F38F]"
+              radius={true}
+              borderColor={true}
+            >
               <div className="my-2">
                 <h4 className="text-white group-hover:text-[#22F38F]">
                   1. ثبت نام در بیت کیو و ساخت پنل{" "}
@@ -76,9 +92,17 @@ export default function Home() {
               </div>
             </Button>
           </div>
-          <CurvedArrow fillColor="#0FB694" Placement="absolute left-[31%] top-[-30px] stroke-white" />
+          <CurvedArrow
+            fillColor="#0FB694"
+            Placement="absolute left-[31%] top-[-30px] stroke-white"
+          />
           <div className="w-[385.07px]">
-            <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+            <Button
+              color="bg-[#22F38F]"
+              hover="hover:border-[#22F38F]"
+              radius={true}
+              borderColor={true}
+            >
               <div className="my-2">
                 <h4 className="text-white group-hover:text-[#22F38F]">
                   1. ثبت نام در بیت کیو و ساخت پنل{" "}
@@ -92,6 +116,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <UserConsentContainer/>
     </div>
   );
 }
