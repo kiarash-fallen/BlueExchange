@@ -21,8 +21,12 @@ const UserConsent = ({ isSelected,  indexId, selectedId }) => {
   return (
     <div
       className={`w-[679px] py-4 relative m-auto  ${
-       indexId === selectedId - 1 ? "-rotate-3" : "" 
-      } ${indexId === selectedId + 1 ? "rotate-3":"" } ${indexId === indexNum && indexId === 5? "-rotate-3" : "rotate-3"} ${isSelected ? "!rotate-0" :""}`}
+        indexId === selectedId - 1 ? "-rotate-3" : ""
+      } ${indexId === selectedId + 1 ? "rotate-3" : ""} ${
+        indexId === indexNum && indexId === 5 ? "-rotate-3" : ""
+      } ${indexId === selectedId + 1 ? "rotate-3" : ""} ${
+        indexId === indexNum && indexId === 1 ? "rotate-3" : ""
+      } ${isSelected ? "!rotate-0" : ""}`}
     >
       <Button
         color="bg-[#22F38F]"
