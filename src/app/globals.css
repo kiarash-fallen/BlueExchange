@@ -96,6 +96,12 @@ body {
   .box-1 {
     @apply box-background-3 box-shadow-2 rounded-[32px] p-6 border border-transparent hover:border-[#22F38F] hover:box-shadow-green;
   }
+  .box-2 {
+    @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[20px] p-2;
+  }
+  .box-3 {
+    @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[40px] p-8;
+  }
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
   }
@@ -119,6 +125,9 @@ body {
   }
   .box-shadow-green {
     box-shadow: 0px 8px 32px rgba(34, 243, 143, 0.12);
+  }
+  .box-shadow-orange {
+    box-shadow: 0px 8px 20px rgba(243, 148, 34, 0.12);
   }
 }
 

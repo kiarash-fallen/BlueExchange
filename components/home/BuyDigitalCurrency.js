@@ -59,7 +59,7 @@ function BuyDigitalCurrency() {
                 // }}
                 />
                 <p className="text-white text-left font-semibold">1ETH = 1,182,835,022 IRR</p>
-                <SecondButton type="button">همین الان بخرش</SecondButton>
+                <SecondButton full={true} shadow="shadow-blue" type="button" typeBtn="filled" color="bg-[#2D74FF]" radius="rounded-xl">همین الان بخرش</SecondButton>
             </form>
         </div>
     )

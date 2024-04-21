@@ -8,6 +8,7 @@ import AboutBlueExchange from "../../components/home/AboutBlueExchange";
 import MostProfitableDigitalCurrencies from "../../components/home/MostProfitableDigitalCurrencies";
 import PerfectMoney from "../../components/home/PerfectMoney";
 import PeiceOfCake from "../../components/home/PeiceOfCake";
+import CurrentPrice from "../../components/home/CurrentPrice";
 
 export default function Home() {
   // i will fix the padding 
@@ -25,13 +26,12 @@ export default function Home() {
       <div className="px-4">
         <MostProfitableDigitalCurrencies />
       </div>
-
-      <AboutBlueExchange />
-      <PerfectMoney />
       <div className="px-4">
         <PeiceOfCake />
       </div>
-
+      <AboutBlueExchange />
+      <PerfectMoney />
+      <CurrentPrice />
     </div>
   );
 }
