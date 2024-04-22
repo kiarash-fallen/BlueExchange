@@ -46,14 +46,6 @@ const UserConsent = ({ isSelected,  indexId, selectedId }) => {
             ستون و سطرآنچنان که لازم است
           </p>
         </div>
-        <div className="absolute bg-[#1E1E1E] rounded-full h-10 w-10"></div>
-        <div className="absolute bg-[#1E1E1E] rounded-full h-10 w-10 left-4"></div>
-        <div className="absolute z-10 -right-20 translate-y-4">
-          <CurvedLine />
-        </div>
-        <div className="absolute z-10 -left-[90px] rotate-[170deg]">
-          <CurvedLine />
-        </div>
       </Button>
     </div>
   );

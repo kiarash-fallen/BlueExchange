@@ -10,6 +10,8 @@ import PerfectMoney from "../../components/home/PerfectMoney";
 import PeiceOfCake from "../../components/home/PeiceOfCake";
 import CurrentPrice from "../../components/home/CurrentPrice";
 import UserConsentContainer from "../../components/home/UserConsentContainer";
+import Blogs from "../../components/home/Blogs";
+import HandlyMarket from "../../components/home/HandlyMarket";
 
 export default function Home() {
   // i will fix the padding 
@@ -26,6 +28,8 @@ export default function Home() {
       <PerfectMoney />
       <CurrentPrice />
       <UserConsentContainer/>
+      <Blogs />
+      <HandlyMarket/>
     </div>
   );
 }
