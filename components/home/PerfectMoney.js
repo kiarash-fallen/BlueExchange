@@ -4,7 +4,7 @@ import BEX from '../layout/BEX'
 
 const PerfectMoney = () => {
   return (
-    <div className="text-white mt-48 w-11/12 m-auto bg-[url('/assests/images/EasyTrade.png')] bg-no-repeat bg-left">
+    <div className="text-white mt-48 bg-[url('/assests/images/EasyTrade.png')] bg-no-repeat bg-left">
         <div className="flex">
           <BEX green={false} />
           <h6 className="my-auto mr-3">پرفکت مانی</h6>

@@ -21,7 +21,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           </span>
 
           <span
-            className={`w-1/3 h-2 bottom-0 blur-md rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
+            className={`w-2/3 h-2 bottom-0 blur-[10px] rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
           ></span>
         </Link>
       ) : (
@@ -43,7 +43,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           </span>
 
           <span
-            className={`w-1/3 h-2 bottom-0 blur-md rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
+            className={`w-2/3 h-2 bottom-0 blur-[10px] rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
           ></span>
         </button>
       )}

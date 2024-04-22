@@ -5,7 +5,7 @@ import BEX from '../layout/BEX'
 
 function TopServices() {
   return (
-    <div className="w-11/12 border border-[#373737] rounded-[52px] m-auto p-9 text-white bg-[#323232] bg-opacity-35 flex">
+    <div className="border border-[#373737] rounded-[52px] p-9 text-white bg-[#323232] bg-opacity-35 flex">
         <div className="w-1/3">
           <div className="flex items-center">
             <BEX green={true}/>

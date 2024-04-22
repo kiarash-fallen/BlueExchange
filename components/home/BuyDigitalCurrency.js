@@ -5,7 +5,7 @@ import SecondButton from '../buttons/SecondButton'
 
 function BuyDigitalCurrency() {
     return (
-        <div className="min-w-[369px] h-auto rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
+        <div className="h-auto rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
             <div className="w-[150px] h-[36px] bg-[#4B4B4B] m-auto rounded-b-3xl shadow-1">
                 <p className="text-white text-center pt-[5px]">
                     خرید ارز دیجیتال

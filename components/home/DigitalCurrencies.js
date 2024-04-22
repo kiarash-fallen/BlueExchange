@@ -10,7 +10,7 @@ const OPTIONS = {
 };
 const DigitalCurrencies = () => {
   return (
-    <div className="w-9/12 bg-[#373737] m-auto rounded-b-[52px] py-4 overflow-hidden">
+    <div className="w-10/12 bg-[#373737] m-auto rounded-b-[52px] py-4 overflow-hidden">
       <EmblaCarousel options={OPTIONS}>
         <div className="embla__container">
           <div className="embla__slide">
