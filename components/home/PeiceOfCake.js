@@ -43,7 +43,7 @@ function PeiceOfCake() {
                             </p>
                         </div>
                         {/* rotate */}
-                        <div className=" flex-none absolute left-0 -top-14 ">
+                        <div className="flex-none absolute left-0 -top-14 rotate-[15deg]">
                             <Image src={auth} alt="image" width="auto" height="auto" />
                         </div>
                     </div>
