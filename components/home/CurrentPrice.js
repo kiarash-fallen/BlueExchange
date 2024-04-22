@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import IconContainer from '../ui/IconContainer';
 import SecondButton from '../buttons/SecondButton';
 import Image from 'next/image';
-import dollor from "../../public/assests/images/dollor.svg";
+import dollor from "../../public/assests/icons/DollarSign.svg";
 
 function CurrentPrice() {
     const [profitCurrency, setProfitCurrency] = useState(0);
