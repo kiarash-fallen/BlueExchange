@@ -15,7 +15,7 @@ function PanelTabs({ list }) {
                     </button>)}
                 </span>
             </div>
-            <div className="mat-10">
+            <div className="mt-5">
                 {list.map((item, i) => <div key={item.name}>{i == active ? item.content : ""}</div>)}
             </div>
         </>

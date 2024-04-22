@@ -1,6 +1,7 @@
 import Navbar from "../../components/layout/Navbar";
 import "./globals.css";
 import '../../components/Embla/css/embla.css';
+import Footer from "../../components/layout/Footer";
 
 export const metadata = {
     title: "Create Next App",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
             <body className="home-bg">
                 <Navbar />
                 {children}
+                <Footer />
             </body>
         </html>
     );

@@ -10,6 +10,7 @@ import PerfectMoney from "../../components/home/PerfectMoney";
 import PeiceOfCake from "../../components/home/PeiceOfCake";
 import CurrentPrice from "../../components/home/CurrentPrice";
 import UserConsentContainer from "../../components/home/UserConsentContainer";
+import Blogs from "../../components/home/Blogs";
 
 export default function Home() {
   // i will fix the padding 
@@ -32,8 +33,15 @@ export default function Home() {
       </div>
       <AboutBlueExchange />
       <PerfectMoney />
-      <CurrentPrice />
+      <div className="mx-4">
+        <CurrentPrice />
+      </div>
+
       <UserConsentContainer />
+      <div className="px-4">
+        <Blogs />
+      </div>
+
     </div >
   );
 }

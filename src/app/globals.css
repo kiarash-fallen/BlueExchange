@@ -54,6 +54,11 @@ body {
   background-size: cover;
 }
 
+.rating-background {
+  background: url("../../public/assests/Icons/polygan2.svg");
+  background-size: cover;
+}
+
 .header-cart-background {
   background: rgba(50, 50, 50, 0.4);
 }
