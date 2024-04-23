@@ -6,7 +6,7 @@ function IconButton2({ children, color, hover, isDisable, type, size, href, hasL
     <>
       {href ? (
         <Link
-          className={`inline-block ${textCOlor} bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white    
+          className={`inline-block ${textCOlor} bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px]  
          ${iconHover} ${radius ? "rounded-[52px]" : "rounded-[10px]"
             } p-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"}`}

@@ -28,10 +28,9 @@ export default function Home() {
       <AboutBlueExchange />
       <PerfectMoney />
       <CurrentPrice />
-      <UserConsentContainer/>
+      <UserConsentContainer />
       <Blogs />
       <HandlyMarket/>
-      <Footer/>
     </div>
   );
 }

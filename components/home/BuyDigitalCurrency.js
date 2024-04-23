@@ -2,10 +2,12 @@ import React from 'react'
 import Select from '../ui/Select'
 import Input from '../input/Input'
 import SecondButton from '../buttons/SecondButton'
+import Image from 'next/image'
+import Eth from '../../public/assests/Icons/eth.svg'
 
 function BuyDigitalCurrency() {
     return (
-        <div className="h-auto rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
+        <div className="w-[349px] h-auto rounded-[32px] border border-[#4B4B4B] header-shadow-cart header-cart-background">
             <div className="w-[150px] h-[36px] bg-[#4B4B4B] m-auto rounded-b-3xl shadow-1">
                 <p className="text-white text-center pt-[5px]">
                     خرید ارز دیجیتال
@@ -38,8 +40,8 @@ function BuyDigitalCurrency() {
                 <Select
                     title="اتریم ( ETH )"
                     hasLeftIcon={true}
-                    icon={<span className="size-[30px] text-white rounded-3xl bg-[#7660FF] flex justify-center items-center
-                     text-xs">ریال</span>} />
+                    icon={<span className="size-[30px] text-white rounded-3xl bg-[#627EEA] flex justify-center items-center
+                     text-xs"><Image src={Eth} width="auto" height="auto" alt='eth' /></span>} />
                 <Input
                     id="email"
                     type="text"

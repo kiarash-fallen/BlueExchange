@@ -5,9 +5,9 @@ import Coins from "../../public/assests/images/coins.svg"
 import BuyDigitalCurrency from "./BuyDigitalCurrency";
 
 const Header = () => {
-    return <header className="grid grid-cols-2">
-        <div className="text-white">
-            <div className="flex justify-between ">
+    return <header className="grid grid-cols-3">
+        <div className="text-white col-span-2">
+            <div className="flex ">
                 <div className="flex items-end mb-10">
                     <div>
                         <div className="flex items-center">
