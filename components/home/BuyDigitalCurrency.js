@@ -40,7 +40,7 @@ function BuyDigitalCurrency() {
                 <Select
                     title="اتریم ( ETH )"
                     hasLeftIcon={true}
-                    icon={<span className="size-[30px] text-white rounded-3xl bg-[#7660FF] flex justify-center items-center
+                    icon={<span className="size-[30px] text-white rounded-3xl bg-[#627EEA] flex justify-center items-center
                      text-xs"><Image src={Eth} width="auto" height="auto" alt='eth' /></span>} />
                 <Input
                     id="email"
