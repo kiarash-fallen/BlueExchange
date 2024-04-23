@@ -31,7 +31,6 @@ export default function Home() {
       <UserConsentContainer />
       <Blogs />
       <HandlyMarket />
-      <Footer />
     </div>
   );
 }
