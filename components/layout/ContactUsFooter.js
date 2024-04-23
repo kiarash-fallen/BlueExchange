@@ -1,9 +1,9 @@
 import React from 'react'
-import BEX from '../layout/BEX'
+import BEX from './BEX'
 import Button from '../buttons/Button';
 import Image from 'next/image';
 
-const Footer = () => {
+const ContactUsFooter = () => {
   return (
     <div className="bg-[#323232] bg-opacity-[36%] border-[#373737] border rounded-[52px] px-10 text-white">
       <div className="flex items-center">
@@ -61,4 +61,4 @@ const Footer = () => {
   );
 }
 
-export default Footer
+export default ContactUsFooter
