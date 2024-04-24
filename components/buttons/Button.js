@@ -6,7 +6,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
     <>
       {href ? (
         <Link
-          className={`inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+          className={`transition ease-in-out duration-500 inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? "rounded-[52px]" : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"}`}
@@ -27,7 +27,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
         </Link>
       ) : (
         <button
-          className={`inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+          className={`transition ease-in-out duration-500 inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? "rounded-[52px]" : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"} ${active && activeColor}`}

@@ -99,7 +99,7 @@ body {
     @apply box-background box-shadow-1 border-2 border-[#373737] rounded-[52px] p-8;
   }
   .box-1 {
-    @apply box-background-3 box-shadow-2 rounded-[32px] p-6 border border-transparent hover:border-[#22F38F] hover:box-shadow-green;
+    @apply box-background-3 box-shadow-2 rounded-[32px] p-6 border border-transparent hover:border-[#22F38F] hover:box-shadow-green transition ease-in-out duration-500;
   }
   .box-2 {
     @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[20px] p-2;

@@ -37,7 +37,7 @@ const UserConsent = ({ isSelected,  indexId, selectedId }) => {
         <div className="my-2">
           <div className="w-[74px] h-[74px] rounded-full bg-[#363636] mx-auto"></div>
           <span className="text-white mt-3">احسان مهدوی</span>
-          <h4 className="text-white group-hover:text-[#22F38F] mt-3 text-[20px] font-semibold">
+          <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F] mt-3 text-[20px] font-semibold">
             بهترین پلتفرم خرید ارز دیجیتال
           </h4>
           <p className="leading-8 text-white mt-4">

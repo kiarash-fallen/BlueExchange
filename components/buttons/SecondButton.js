@@ -16,7 +16,7 @@ function SecondButton({ children, color, hover, isDisable, type, typeBtn, size, 
     switch (typeBtn) {
       case "outline":
         return <button
-          className={`py-2 px-4 flex justify-center items-center rounded-xl border ${full ? "w-full" : "w-auto"} ${color} ${textColor} hover:text-white ${bgHover} ${textSize}`}
+          className={`py-2 transition ease-in-out duration-500 px-4 flex justify-center items-center rounded-xl border ${full ? "w-full" : "w-auto"} ${color} ${textColor} hover:text-white ${bgHover} ${textSize}`}
           type={type}
           disabled={isDisable}
           onClick={onClick}
@@ -29,7 +29,7 @@ function SecondButton({ children, color, hover, isDisable, type, typeBtn, size, 
         </button >
       case "filled":
         return <button
-          className={`px-6 py-3 text-white flex justify-center items-center ${full ? "w-full" : "w-auto"} ${shadow} ${color} ${radius} ${textColor} ${textSize}`}
+          className={`px-6 py-3 transition ease-in-out duration-500 text-white flex justify-center items-center ${full ? "w-full" : "w-auto"} ${shadow} ${color} ${radius} ${textColor} ${textSize}`}
           type={type}
           disabled={isDisable}
           onClick={onClick}

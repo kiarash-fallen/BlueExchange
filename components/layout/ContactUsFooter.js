@@ -6,7 +6,7 @@ import Image from 'next/image';
 const ContactUsFooter = () => {
   return (
     <div className="bg-[#323232] bg-opacity-[36%] border-[#373737] border rounded-[52px] px-10 text-white">
-      <div className="flex items-center">
+      <div className="flex items-center mt-10">
         <BEX />
         <h6 className="mr-3">همیشه کنارتیم</h6>
       </div>
@@ -22,7 +22,7 @@ const ContactUsFooter = () => {
         <form className="grid grid-cols-2 w-1/2 grid-rows-4 gap-x-5 gap-y-8 mt-6 px-2">
           <div className="relative">
             <input
-              className="w-full rounded-2xl focus:border-b InputShadow focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
+              className="w-full rounded-2xl focus:border-b InputShadow transition ease-in-out duration-500 focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
               placeholder="وارد کنید..."
             />
             <div className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA]">
@@ -31,7 +31,7 @@ const ContactUsFooter = () => {
           </div>
           <div className="relative">
             <input
-              className="w-full rounded-2xl focus:border-b InputShadow focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
+              className="w-full transition ease-in-out duration-500 rounded-2xl focus:border-b InputShadow focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
               placeholder="وارد کنید ...."
             />
             <div className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA]">
@@ -39,7 +39,7 @@ const ContactUsFooter = () => {
             </div>
           </div>
           <div className="relative col-span-2 row-span-2">
-            <textarea className="rounded-2xl w-full h-full InputShadow outline-none px-3 py-4 focus:border-b focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA]" />
+            <textarea className="rounded-2xl transition ease-in-out duration-300 w-full h-full InputShadow outline-none px-3 py-4 focus:border-b focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA]" />
             <div className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA]">
               شماره یا ایمیل :
             </div>

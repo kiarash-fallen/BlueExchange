@@ -117,7 +117,7 @@ function PeiceOfCake() {
                     <div className="w-[385.07px]">
                         <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white group-hover:text-[#22F38F]">
+                                <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F]">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">
@@ -131,7 +131,7 @@ function PeiceOfCake() {
                     <div className="w-[385.07px] transf">
                         <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white group-hover:text-[#22F38F]">
+                                <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F]">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">
@@ -145,7 +145,7 @@ function PeiceOfCake() {
                     <div className="w-[385.07px]">
                         <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white group-hover:text-[#22F38F]">
+                                <h4 className="text-white group-hover:text-[#22F38F] transition ease-in-out duration-500">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">

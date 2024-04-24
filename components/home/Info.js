@@ -46,7 +46,7 @@ const Info = () => {
             </div>
         </div>
         <div className="flex justify-end">
-            <Image src={Group9998} alt="image" width="auto" height="auto" />
+            <Image src={Group9998} alt="image" width="auto" height="auto" className="ml-14 -mb-0.5"/>
         </div>
     </main >
 }
