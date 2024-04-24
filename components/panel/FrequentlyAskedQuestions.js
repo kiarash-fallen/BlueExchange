@@ -1,6 +1,7 @@
 // "use client";
 import React, { useState } from 'react'
 import Button from '../buttons/Button';
+import FillArrow from "../../components/ui/icons/FillArrow"
 
 function FrequentlyAskedQuestions({ list }) {
     const [active, setActive] = useState(0);
@@ -17,9 +18,7 @@ function FrequentlyAskedQuestions({ list }) {
                         isFull={true}
                         hasLeftIcon={true}
                         onClick={() => setActive(i)}
-                        icon={<span className="rounded-lg p-2 bg-[#3E3E3E] ">
-
-                        </span>}
+                        icon={<FillArrow bgColor={i === active ? "fill-[#22F38F]" : "fill-[#3E3E3E]"} arrowColor={i === active ? "fill-[#363636]" : "fill-[#CCCCCC]"} />}
                     >
                         <span className="font-semibold">{item.name}</span>
                     </Button>

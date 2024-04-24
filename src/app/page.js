@@ -29,7 +29,7 @@ export default function Home() {
       <CurrentPrice />
       <UserConsentContainer />
       <Blogs />
-      <HandlyMarket/>
+      <HandlyMarket />
     </div>
   );
 }
