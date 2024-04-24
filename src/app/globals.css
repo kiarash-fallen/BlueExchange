@@ -107,6 +107,9 @@ body {
   .box-3 {
     @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[40px] p-8;
   }
+  .box-4 {
+    @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[32px] p-8;
+  }
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
   }
