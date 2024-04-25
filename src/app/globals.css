@@ -19,7 +19,8 @@ body {
   font-family: Peyda-Normal;
   src: url('../../public/assests/fonts/PeydaFaNum-Medium.ttf');
 }
-.Blurred{
+
+.Blurred {
   display: none;
 }
 
@@ -38,7 +39,8 @@ body {
   -moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
 }
-.ThirdBG{
+
+.ThirdBG {
   background-position-y: -40px;
   background-position-x: -20px;
   background-size: 80%
@@ -95,20 +97,29 @@ body {
   span {
     @apply inline-block;
   }
+
   .box {
     @apply box-background box-shadow-1 border-2 border-[#373737] rounded-[52px] p-8;
   }
+
   .box-1 {
-    @apply box-background-3 box-shadow-2 rounded-[32px] p-6 border border-transparent hover:border-[#22F38F] hover:box-shadow-green transition ease-in-out duration-500;
+    @apply box-background-3 box-shadow-2 rounded-[32px] p-6 border border-transparent hover:border-[#22F38F] hover:box-shadow-green hover-animation;
   }
+
   .box-2 {
     @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[20px] p-2;
   }
+
   .box-3 {
     @apply box-background box-shadow-1 border-2 border-[#565656] rounded-[40px] p-8;
   }
+
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
+  }
+
+  .hover-animation {
+    @apply transition ease-in-out duration-500;
   }
 }
 
@@ -116,35 +127,45 @@ body {
   .blue-shadow {
     box-shadow: 0px 6px 20px rgba(45, 116, 255, 0.16);
   }
+
   .box-background {
     background: rgba(50, 50, 50, 0.36);
   }
-  .box-background-3 {    
+
+  .box-background-3 {
     background: rgba(54, 54, 54, 0.48);
   }
+
   .box-shadow-1 {
     box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.04);
   }
+
   .box-shadow-2 {
     box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
   }
+
   .box-shadow-green {
     box-shadow: 0px 8px 32px rgba(34, 243, 143, 0.12);
   }
+
   .box-shadow-green-2 {
     box-shadow: 0px 0px 16px rgba(15, 182, 148, 0.16), inset 2px 2px 16px rgba(255, 255, 255, 0.16), inset -1px -1px 16px rgba(0, 0, 0, 0.12);
   }
+
   .box-shadow-orange {
     box-shadow: 0px 8px 20px rgba(243, 148, 34, 0.12);
   }
 }
 
-.InputShadow:focus{
-  -webkit-box-shadow: 0px 8px 12px 0px rgba(34,243,143,0.12);
--moz-box-shadow: 0px 8px 12px 0px rgba(34,243,143,0.12);
-box-shadow: 0px 8px 12px 0px rgba(34,243,143,0.12);
+.InputShadow:focus {
+  -webkit-box-shadow: 0px 8px 12px 0px rgba(34, 243, 143, 0.12);
+  -moz-box-shadow: 0px 8px 12px 0px rgba(34, 243, 143, 0.12);
+  box-shadow: 0px 8px 12px 0px rgba(34, 243, 143, 0.12);
+}
+
+.LineGradient {
+  background: rgb(170, 170, 170);
+  background: linear-gradient(90deg, rgba(170, 170, 170, 1) 6%, rgba(170, 170, 170, 0) 100%);
 }
 
 /* border-bottom: 1px solid #2D74FF; */
-
-

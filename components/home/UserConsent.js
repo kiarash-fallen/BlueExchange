@@ -31,13 +31,13 @@ const UserConsent = ({ isSelected,  indexId, selectedId }) => {
       <Button
         color="bg-[#22F38F]"
         hover="hover:border-[#22F38F]"
-        radius={true}
+        radius="rounded-[52px]"
         borderColor={true}
       >
         <div className="my-2">
           <div className="w-[74px] h-[74px] rounded-full bg-[#363636] mx-auto"></div>
           <span className="text-white mt-3">احسان مهدوی</span>
-          <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F] mt-3 text-[20px] font-semibold">
+          <h4 className="text-white hover-animation group-hover:text-[#22F38F] mt-3 text-[20px] font-semibold">
             بهترین پلتفرم خرید ارز دیجیتال
           </h4>
           <p className="leading-8 text-white mt-4">

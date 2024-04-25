@@ -6,8 +6,8 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
     <>
       {href ? (
         <Link
-          className={`transition ease-in-out duration-500 inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
-         ${radius ? "rounded-[52px]" : "rounded-[10px]"
+          className={`hover-animation inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+         ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"}`}
           href={href}
@@ -16,7 +16,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
             <span className={`${isFull && icon && "w-full justify-between"} flex items-center`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span>{children}</span>
-              {hasLeftIcon ? <span className="ml-2">{icon}</span> : ""}
+              {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
             </span>
 
           </span>
@@ -27,8 +27,8 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
         </Link>
       ) : (
         <button
-          className={`transition ease-in-out duration-500 inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
-         ${radius ? "rounded-[52px]" : "rounded-[10px]"
+          className={`hover-animation inline-block bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+         ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"} ${active && activeColor}`}
           type={type}
@@ -36,10 +36,10 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           onClick={onClick}
         >
           <span className={`flex items-center ${!icon && "justify-center"}`} >
-            <span className={`${isFull && icon && "w-full flex justify-between"} items-center`}>
+            <span className={`w-full flex justify-center items-center`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span className={active && "!text-white"}>{children}</span>
-              {hasLeftIcon ? <span className="ml-2">{icon}</span> : ""}
+              {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
             </span>
 
           </span>

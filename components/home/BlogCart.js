@@ -7,7 +7,7 @@ import Button from '../buttons/Button'
 function BlogCart() {
     return (
         <div className="relative pt-4">
-            <div className="bg-[#2C2C2C] rounded-[20px] border border-transparent transition ease-in-out duration-500 hover:border-[#22F38F] w-full h-52">
+            <div className="bg-[#2C2C2C] rounded-[20px] border border-transparent hover-animation hover:border-[#22F38F] w-full h-52">
                 <div className=" flex justify-end">
                     <div className="rating-background w-20 h-12 absolute top-0 flex flex-col items-center pt-2">
                         <Star />

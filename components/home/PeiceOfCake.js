@@ -115,9 +115,9 @@ function PeiceOfCake() {
                 </div>
                 <div className="mt-12 flex justify-between relative">
                     <div className="w-[385.07px]">
-                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius="rounded-[52px]" borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F]">
+                                <h4 className="text-white hover-animation group-hover:text-[#22F38F]">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">
@@ -129,9 +129,9 @@ function PeiceOfCake() {
                     </div>
                     <CurvedArrow fillColor="#0FB694" Placement="absolute right-[31%] bottom-[-30px] transform scale-x-[-1] rotate-180 bottom-2 stroke-[#0FB694]" />
                     <div className="w-[385.07px] transf">
-                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius="rounded-[52px]" borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white transition ease-in-out duration-500 group-hover:text-[#22F38F]">
+                                <h4 className="text-white hover-animation group-hover:text-[#22F38F]">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">
@@ -143,9 +143,9 @@ function PeiceOfCake() {
                     </div>
                     <CurvedArrow fillColor="#0FB694" Placement="absolute left-[31%] top-[-30px] stroke-white" />
                     <div className="w-[385.07px]">
-                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius={true} borderColor={true}>
+                        <Button color="bg-[#22F38F]" hover="hover:border-[#22F38F]" radius="rounded-[52px]" borderColor={true}>
                             <div className="my-2">
-                                <h4 className="text-white group-hover:text-[#22F38F] transition ease-in-out duration-500">
+                                <h4 className="text-white group-hover:text-[#22F38F] hover-animation">
                                     1. ثبت نام در بیت کیو و ساخت پنل{" "}
                                 </h4>
                                 <p className="leading-9 text-white mt-4">

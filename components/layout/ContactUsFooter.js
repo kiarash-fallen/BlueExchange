@@ -22,7 +22,7 @@ const ContactUsFooter = () => {
         <form className="grid grid-cols-2 w-1/2 grid-rows-4 gap-x-5 gap-y-8 mt-6 px-2">
           <div className="relative">
             <input
-              className="w-full rounded-2xl focus:border-b InputShadow transition ease-in-out duration-500 focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
+              className="w-full rounded-2xl focus:border-b InputShadow hover-animation focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
               placeholder="وارد کنید..."
             />
             <div className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA]">
@@ -31,7 +31,7 @@ const ContactUsFooter = () => {
           </div>
           <div className="relative">
             <input
-              className="w-full transition ease-in-out duration-500 rounded-2xl focus:border-b InputShadow focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
+              className="w-full hover-animation rounded-2xl focus:border-b InputShadow focus:border-b-[#22F38F] focus:border-t-0 focus:border-l-0 focus:border-r-0 focus:bg-[#323232] bg-[#252525] bg-opacity-[32%] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] "
               placeholder="وارد کنید ...."
             />
             <div className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA]">
