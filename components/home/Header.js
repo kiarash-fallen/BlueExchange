@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../buttons/Button";
 import IconContainer from "../ui/IconContainer";
 import Coins from "../../public/assests/images/coins.svg"
-import BuyDigitalCurrency from "./BuyDigitalCurrency";
+import BuyDigitalCurrency from "../forms/BuyDigitalCurrency";
 
 const Header = () => {
     return <header className="grid grid-cols-3">
