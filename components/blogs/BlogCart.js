@@ -35,7 +35,7 @@ function BlogCart() {
             <p className="text-white text-[20px] mt-4 font-medium px-1">
                 بهترین رمز ارز های سال 2024 برای پوزیشن خرید
             </p>
-            <p className="text-white mt-4 font-medium w-[380px] px-1">
+            <p className="text-white mt-4 font-medium px-1">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
             </p>
 
