@@ -21,7 +21,6 @@ const Input2 = ({ label, id, focus, color, isDisable, type, placeholder, hasErro
                 {hasRightIcon ? <>
                     {clickableIcon ? <button type="button" onClick={handleClick}>{icon}</button> : icon}
                 </> : ""}
-                {/* <div className={`absolute bottom-0 -translate-x-[100%] w-1/3 h-1 blur-md hidden peer-focus-within:block ${color}`} ></div> */}
             </div>
             <small className="">{errorMessage}</small>
         </div>

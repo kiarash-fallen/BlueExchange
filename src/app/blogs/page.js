@@ -46,12 +46,36 @@ function page() {
             <div className="my-4">
                 <BlogSlider />
             </div>
-            <Input2
-                id="search"
-                label="جستجو :"
-                hasRightIcon={true}
-                icon={<Search />}
-            />
+            <div>
+                <div className="flex items-center my-4 text-white">
+                    <IconContainer color="bg-[#2D74FF]" border="border-[#2D74FF]">
+                        BEX
+                    </IconContainer>
+                    <p className="text-sm mr-4">دسته بندی مقالات</p>
+                </div>
+                <p className="font-light text-[40px] text-white mb-5">
+                    <span className="font-semibold">تمام مقالات</span>
+                    بلواکسچنج
+                </p>
+            </div>
+            <div className="flex justify-between my-4">
+                <span className="inline-block w-0.5 h-8 bg-[#323232] mx-8"></span>
+                <Input2
+                    id="search"
+                    label="جستجو :"
+                    placeholder="نام یا دسته بندی مقالات ...."
+                    hasRightIcon={true}
+                    icon={<Search />}
+                />
+            </div>
+            <div>
+                <div className="grid grid-cols-4 gap-4">
+                    <BlogCart />
+                    <BlogCart />
+                    <BlogCart />
+                    <BlogCart />
+                </div>
+            </div>
         </>
     )
 }
