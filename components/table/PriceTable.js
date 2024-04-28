@@ -90,19 +90,60 @@ function PriceTable() {
                     <Image src={dollor} alt="image" width="auto" height="auto" />
                 </div>
             </div>
-            <div className="box-3 -mt-8 pb-0">
-                <div className="w-full flex justify-between items-center my-5">
-                    <span className="text-white font-medium text-xl">نام رمز ارز</span>
-                    <span className="text-white font-medium text-xl">آخرین قیمت</span>
-                    <Dropdown title={"وضعیت هفتگی"} textClass={"text-white font-medium text-xl"} />
-                    <span className="text-white font-medium text-xl">  نمودار 24 ساعت</span>
-                    <span className="text-white font-medium text-xl">  عملیات</span>
-                </div>
-                <TableLine />
-                <div className="w-full flex justify-between items-center my-5">
-                    <span className="flex items-center">
-                        <span className="flex items-center">
-                            {path === "/market-price" && <Heart />}
+            <div>
+                <div className="box-3 -mt-8 pb-0">
+                    <div className="w-full grid grid-cols-5   my-5">
+                        <span className="text-white font-medium text-xl justify-self-start">نام رمز ارز</span>
+                        <span className="text-white font-medium text-xl justify-self-start">آخرین قیمت</span>
+                        <span className=' justify-self-center'>
+                            <Dropdown title={"وضعیت هفتگی"} textClass={"text-white font-medium text-xl"} />
+                        </span>
+                        <span className="text-white font-medium text-xl justify-self-end">  نمودار 24 ساعت</span>
+                        <span className="text-white font-medium text-xl justify-self-end">  عملیات</span>
+                    </div>
+                    <TableLine />
+                    <div className="w-full grid grid-cols-5 my-5">
+                        <span className="flex items-center ">
+                            <span className="flex items-center">
+                                {path === "/market-price" && <Heart />}
+                                <span className={`${path === "/market-price" && "mr-4"}  flex items-center`}>
+                                    <span>
+                                        <Image src={Xlm} alt="image" width="auto" height="auto" />
+                                    </span>
+                                    <span className="flex flex-col mr-2">
+                                        <span className="text-white">استلا </span>
+                                        <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                        <span className="text-white self-center justify-self-start"> 2.652.362 تومان</span>
+                        <span className={` justify-self-center`}>
+                            <span className="bg-[#22F38F] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl ">
+                                +%65
+                            </span>
+                        </span>
+
+                        <span className="text-white font-medium text-xl justify-self-end">
+                            <Image src={GreenChart} alt="chart" width="auto" height="auto" />
+                        </span>
+                        <span className="text-white font-medium text-xl justify-self-end">
+                            <SecondButton
+                                type="button"
+                                typeBtn="outline"
+                                color="border-[#0FB694]"
+                                textColor="text-[#0FB694]"
+                                bgHover="hover:bg-[#0FB694]"
+                                textSize="text-sm"
+                            >
+                                خرید / فروش
+                            </SecondButton>
+                        </span>
+                    </div>
+                    <TableLine />
+                    <div className="w-full grid grid-cols-5 my-5">
+                        <span className="flex items-center justify-self-start">
+                            {path === "/market-price" && <Heart color="blue" />}
                             <span className={`${path === "/market-price" && "mr-4"}  flex items-center`}>
                                 <span>
                                     <Image src={Xlm} alt="image" width="auto" height="auto" />
@@ -113,74 +154,38 @@ function PriceTable() {
                                 </span>
                             </span>
                         </span>
-                    </span>
-                    <span className="text-white"> 2.652.362 تومان</span>
-                    <span className="flex justify-center w-60 bg ">
-                        <span className="bg-[#22F38F] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl ">
-                            +%65
-                        </span>
-                    </span>
-
-                    <span className="text-white font-medium text-xl">
-                        <Image src={GreenChart} alt="chart" width="auto" height="auto" />
-                    </span>
-                    <span className="text-white font-medium text-xl">
-                        <SecondButton
-                            type="button"
-                            typeBtn="outline"
-                            color="border-[#0FB694]"
-                            textColor="text-[#0FB694]"
-                            bgHover="hover:bg-[#0FB694]"
-                            textSize="text-sm"
-                        >
-                            خرید / فروش
-                        </SecondButton>
-                    </span>
-                </div>
-                <TableLine />
-                <div className="w-full flex justify-between items-center my-5">
-                    <span className="flex items-center">
-                        {path === "/market-price" && <Heart color="blue" />}
-                        <span className={`${path === "/market-price" && "mr-4"}  flex items-center`}>
-                            <span>
-                                <Image src={Xlm} alt="image" width="auto" height="auto" />
-                            </span>
-                            <span className="flex flex-col mr-2">
-                                <span className="text-white">استلا </span>
-                                <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                        <span className="text-white justify-self-start self-center"> 2.652.362 تومان</span>
+                        <span className=" justify-self-center">
+                            <span className="bg-[#FF5C5C] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl justify-self-center">
+                                +%65
                             </span>
                         </span>
-                    </span>
-                    <span className="text-white"> 2.652.362 تومان</span>
-                    <span className="flex justify-center w-60">
-                        <span className="bg-[#FF5C5C] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl">
-                            +%65
-                        </span>
-                    </span>
 
-                    <span className="text-white font-medium text-xl">
-                        <Image src={RedChart} alt="chart" width="auto" height="auto" />
-                    </span>
-                    <span className="text-white font-medium text-xl">
-                        <SecondButton
-                            type="button"
-                            typeBtn="outline"
-                            color="border-[#0FB694]"
-                            textColor="text-[#0FB694]"
-                            bgHover="hover:bg-[#0FB694]"
-                            textSize="text-sm"
-                        >
-                            خرید / فروش
-                        </SecondButton>
-                    </span>
-                </div>
-                <div className="w-[158px] m-auto flex justify-center items-center py-2 text-white bg-[#565656] rounded-tr-[24px] rounded-tl-[24px]">
-                    <span className="ml-2">
-                        همه رمز ارز ها
-                    </span>
-                    <ArrowDown />
+                        <span className="text-white font-medium text-xl justify-self-end">
+                            <Image src={RedChart} alt="chart" width="auto" height="auto" />
+                        </span>
+                        <span className="text-white font-medium text-xl justify-self-end">
+                            <SecondButton
+                                type="button"
+                                typeBtn="outline"
+                                color="border-[#0FB694]"
+                                textColor="text-[#0FB694]"
+                                bgHover="hover:bg-[#0FB694]"
+                                textSize="text-sm"
+                            >
+                                خرید / فروش
+                            </SecondButton>
+                        </span>
+                    </div>
+                    <div className="w-[158px] m-auto flex justify-center items-center py-2 text-white bg-[#565656] rounded-tr-[24px] rounded-tl-[24px]">
+                        <span className="ml-2">
+                            همه رمز ارز ها
+                        </span>
+                        <ArrowDown />
+                    </div>
                 </div>
             </div>
+
         </>
     )
 }
