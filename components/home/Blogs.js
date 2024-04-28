@@ -22,7 +22,7 @@ function Blogs() {
                     اخبار و مقالات بازار مالی
                 </p>
                 <Button
-                    href="/"
+                    href="/blogs"
                     varient="#22F38F"
                     color="bg-[#22F38F]"
                     hover="hover:border-[#22F38F]">

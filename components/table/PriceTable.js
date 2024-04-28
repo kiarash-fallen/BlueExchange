@@ -9,12 +9,16 @@ import dollor from "../../public/assests/images/dollorBig.svg";
 import Xlm from "../../public/assests/images/xlm.svg";
 import GreenChart from "../../public/assests/images/Group 889.svg";
 import RedChart from "../../public/assests/images/Vector 7.svg";
+import { usePathname } from 'next/navigation'
+import Heart from '../ui/icons/Heart'
 
 
 function PriceTable() {
 
     const [profitCurrency, setProfitCurrency] = useState(0);
     const [currencyType, setCurrencyType] = useState(0);
+    const path = usePathname();
+    console.log(path)
     return (
         <>
             <div className="box-2 mt-10 flex items-center justify-between">
@@ -50,28 +54,36 @@ function PriceTable() {
                         بیشترین ریزش
                     </SecondButton>
                 </div>
-                <div className="flex py-2 pr-2 border-r border-r-[#CCCCCC]">
-                    <SecondButton
-                        typeBtn="filled"
-                        type="button"
-                        color={currencyType === 1 ? "bg-[#F39422]" : ""}
-                        radius="rounded-2xl"
-                        shadow={currencyType === 1 ? "box-shadow-orange" : ""}
-                        onClick={() => setCurrencyType(1)}
-                    >
-                        تتر
-                    </SecondButton>
-                    <SecondButton
-                        typeBtn="filled"
-                        type="button"
-                        color={currencyType === 0 ? "bg-[#F39422]" : ""}
-                        radius="rounded-2xl"
-                        shadow={currencyType === 0 ? "box-shadow-orange" : ""}
-                        onClick={() => setCurrencyType(0)}
-                    >
-                        تومان
-                    </SecondButton>
+                <div className="flex items-center">
+                    {path === "/market-price" && <span className="flex items-start ml-4">
+
+                        <span className="size-[20px] text-xs text-white rounded ml-4 bg-[#2D74FF] flex justify-center items-center">3</span>
+                        <Heart />
+                    </span>}
+                    <div className="flex py-2 pr-2 border-r border-r-[#CCCCCC]">
+                        <SecondButton
+                            typeBtn="filled"
+                            type="button"
+                            color={currencyType === 1 ? "bg-[#F39422]" : ""}
+                            radius="rounded-2xl"
+                            shadow={currencyType === 1 ? "box-shadow-orange" : ""}
+                            onClick={() => setCurrencyType(1)}
+                        >
+                            تتر
+                        </SecondButton>
+                        <SecondButton
+                            typeBtn="filled"
+                            type="button"
+                            color={currencyType === 0 ? "bg-[#F39422]" : ""}
+                            radius="rounded-2xl"
+                            shadow={currencyType === 0 ? "box-shadow-orange" : ""}
+                            onClick={() => setCurrencyType(0)}
+                        >
+                            تومان
+                        </SecondButton>
+                    </div>
                 </div>
+
             </div>
             <div>
                 <div className="flex justify-center -mt-10">
@@ -89,16 +101,21 @@ function PriceTable() {
                 <TableLine />
                 <div className="w-full flex justify-between items-center my-5">
                     <span className="flex items-center">
-                        <span>
-                            <Image src={Xlm} alt="image" width="auto" height="auto" />
-                        </span>
-                        <span className="flex flex-col mr-2">
-                            <span className="text-white">استلا </span>
-                            <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                        <span className="flex items-center">
+                            {path === "/market-price" && <Heart />}
+                            <span className={`${path === "/market-price" && "mr-4"}  flex items-center`}>
+                                <span>
+                                    <Image src={Xlm} alt="image" width="auto" height="auto" />
+                                </span>
+                                <span className="flex flex-col mr-2">
+                                    <span className="text-white">استلا </span>
+                                    <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                                </span>
+                            </span>
                         </span>
                     </span>
                     <span className="text-white"> 2.652.362 تومان</span>
-                    <span className="flex justify-center w-60 ">
+                    <span className="flex justify-center w-60 bg ">
                         <span className="bg-[#22F38F] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl ">
                             +%65
                         </span>
@@ -123,16 +140,18 @@ function PriceTable() {
                 <TableLine />
                 <div className="w-full flex justify-between items-center my-5">
                     <span className="flex items-center">
-                        <span>
-                            <Image src={Xlm} alt="image" width="auto" height="auto" />
-                        </span>
-                        <span className="flex flex-col mr-2">
-                            <span className="text-white">استلا </span>
-                            <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                        {path === "/market-price" && <Heart color="blue" />}
+                        <span className={`${path === "/market-price" && "mr-4"}  flex items-center`}>
+                            <span>
+                                <Image src={Xlm} alt="image" width="auto" height="auto" />
+                            </span>
+                            <span className="flex flex-col mr-2">
+                                <span className="text-white">استلا </span>
+                                <span className="text-[#CCCCCC]">( XLM / IRR ) </span>
+                            </span>
                         </span>
                     </span>
                     <span className="text-white"> 2.652.362 تومان</span>
-
                     <span className="flex justify-center w-60">
                         <span className="bg-[#FF5C5C] text-[#363636] box-shadow-green-2 py-2 px-4 rounded-xl">
                             +%65
