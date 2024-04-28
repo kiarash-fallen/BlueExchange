@@ -1,7 +1,7 @@
 import React from 'react'
 import IconContainer from '../ui/IconContainer'
 import Button from '../buttons/Button'
-import BlogSlider from './BlogSlider'
+import BlogSlider from '../blogs/BlogSlider'
 import FrequentlyAskedQuestions from '../panel/FrequentlyAskedQuestions'
 import Answer from './Answer'
 

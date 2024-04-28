@@ -18,7 +18,6 @@ const Header = () => {
                         </div>
                         <p className="font-semibold text-5xl mt-8">بیش از 125.025+</p>
                     </div>
-
                 </div>
                 <div className="">
                     <Image src={Coins} width="auto" height={300} alt="coins" />

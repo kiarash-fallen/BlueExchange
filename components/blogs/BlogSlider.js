@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import EmblaCarousel from "../Embla/EmblaCarousel";
 import { DotButton, useDotButton } from '../Embla/EmblaCarouselDotButton'
@@ -25,15 +26,15 @@ function BlogSlider() {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
                         {slides.map((index) => (
-                            <div className="embla__slide" key={index.id}>
-                                <div className="ml-4">
+                            <div className="" key={index.id}>
+                                <div className="ml-4 w-[400px]">
                                     <BlogCart />
                                 </div>
                             </div>
                         ))}
                     </div>
                     <div className="flex justify-center mt-5">
-                        <div className="embla__dots  ">
+                        <div className="embla__dots">
                             {scrollSnaps.map((_, index) => (
                                 <DotButton
                                     key={index}
