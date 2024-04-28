@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BuyAndSellDC = () => {
+export const BuyDCs = () => {
   return (
     <div>
       
@@ -8,4 +8,10 @@ const BuyAndSellDC = () => {
   )
 }
 
-export default BuyAndSellDC
+export const SellDCs = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
