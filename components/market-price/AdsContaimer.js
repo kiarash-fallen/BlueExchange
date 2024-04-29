@@ -26,7 +26,7 @@ function AdsContaimer() {
                 <div className="embla__viewport w-full" ref={emblaRef}>
                     <div className="embla__container w-full">
                         {slides.map((index) => (
-                            <div className="embla__slide w-full h-[225px]" key={index.id}>
+                            <div className="embla__slide w-[99%] h-[225px] mx-2" key={index.id}>
                                 <div className="embla__slide__number min-w-0 box-4 w-full h-full">
                                 </div>
                             </div>

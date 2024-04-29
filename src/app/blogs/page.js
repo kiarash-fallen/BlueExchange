@@ -69,7 +69,7 @@ function page() {
                 />
             </div>
             <div>
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4 mb-10">
                     <BlogCart />
                     <BlogCart />
                     <BlogCart />

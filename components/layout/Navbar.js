@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex items-center">
             <IconButton href="/test" icon={<UserHeadset />} />
             <Button
-                href="/"
+                href="/login"
                 hasRightIcon={true}
                 icon={<User />}
                 color="bg-[#22F38F]"
