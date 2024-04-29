@@ -5,6 +5,7 @@ import InvisibleEye from '../ui/icons/InvisibleEye'
 import ArrowDown from '../ui/icons/ArrowDown'
 import Button from '../buttons/Button'
 import Image from 'next/image'
+import Eye from '../../public/assests/Icons/Eye'
 
 const SignIn = () => {
   const [type , setType ] = useState(true)
@@ -57,7 +58,7 @@ const SignIn = () => {
           className="absolute bottom-4 left-4 cursor-pointer"
           onClick={() => setType(!type)}
         >
-          <InvisibleEye />
+          {type ? <InvisibleEye /> : <Eye />}
         </label>
       </div>
       <button className="flex items-center col-start-2 h-fit w-fit mt-4">

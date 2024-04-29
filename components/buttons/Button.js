@@ -13,7 +13,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           href={href}
         >
           <span className={`flex justify-center items-center ${!icon && "justify-center"}`} >
-            <span className={` flex items-center ${isFull && icon && "w-full justify-between"}`}>
+            <span className={` flex items-center ${isFull && icon && "w-full justify-center"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
@@ -36,7 +36,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           onClick={onClick}
         >
           <span className={`flex items-center ${!icon && "justify-center"}`} >
-            <span className={`flex justify-center items-center ${isFull && icon && "w-full justify-between"}`}>
+            <span className={`flex items-center ${isFull && icon && "w-full justify-center"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span className={active && "!text-white"}>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
