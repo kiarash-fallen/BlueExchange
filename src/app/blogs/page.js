@@ -7,6 +7,7 @@ import BlogCart from '../../../components/blogs/BlogCart'
 import BlogSlider from '../../../components/blogs/BlogSlider'
 import Input2 from '../../../components/input/Input2'
 import Search from '../../../components/ui/icons/Search'
+import PaginationContainer from '../../../components/pagination/PaginationContainer'
 
 function page() {
     return (
@@ -58,7 +59,8 @@ function page() {
                     بلواکسچنج
                 </p>
             </div>
-            <div className="flex justify-between my-4">
+            <div className="grid grid-cols-3">
+                <div></div>
                 <span className="inline-block w-0.5 h-8 bg-[#323232] mx-8"></span>
                 <Input2
                     id="search"
@@ -74,8 +76,13 @@ function page() {
                     <BlogCart />
                     <BlogCart />
                     <BlogCart />
+                    <BlogCart />
+                    <BlogCart />
+                    <BlogCart />
+                    <BlogCart />
                 </div>
             </div>
+            <PaginationContainer />
         </>
     )
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useMemo, useState } from 'react';
 import Pagination from '../pagination/Pagination';
 const data = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 },];
 let PageSize = 1;
@@ -10,7 +11,7 @@ function PaginationContainer() {
         const lastPageIndex = firstPageIndex + PageSize;
         return data.slice(firstPageIndex, lastPageIndex);
     }, [currentPage]);
-    console.log(path)
+
     return (
         <div className="flex justify-center">
             <Pagination

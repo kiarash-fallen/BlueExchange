@@ -6,34 +6,35 @@ import ArrowDown from '../ui/icons/ArrowDown'
 import LeftArrow from '../ui/icons/LeftArrow'
 import Recycle from '../ui/icons/Recycle'
 import Image from 'next/image'
+import LeftArrow2 from '../ui/icons/LeftArrow2'
 
 
 const CodeValidation = () => {
-  const [otp , setOTP ] = useState(['', '', '',''])
-  const { register , handleSubmit } = useForm();
+  const [otp, setOTP] = useState(['', '', '', ''])
+  const { register, handleSubmit } = useForm();
   const initialTime = 120;
-  const [time , setTime ] = useState(initialTime);
+  const [time, setTime] = useState(initialTime);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTime((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
     }, 1000);
 
-    return () => {clearInterval(timer)}
-  },[])
+    return () => { clearInterval(timer) }
+  }, [])
 
   const handleRestart = () => {
     setTime(initialTime);
   }
 
   const handleChange = (e, index) => {
-    if(!isNaN(e.target.value)) {
+    if (!isNaN(e.target.value)) {
       const newOTP = [...otp];
       newOTP[index] = e.target.value;
       setOTP(newOTP)
 
-      if(e.target.value !== ''){
-        if(index < otp.length - 1) {
+      if (e.target.value !== '') {
+        if (index < otp.length - 1) {
           document.getElementById(`otp-input-${index + 1}`).focus();
         }
       }
@@ -81,7 +82,7 @@ const CodeValidation = () => {
                 .padStart(2, "0")}
               :{(time % 60).toString().padStart(2, "0")}
             </h1>
-            <Image src='/assests/Icons/Time.svg' alt='Timer' width={16} height={100} className='mx-2'/>
+            <Image src='/assests/Icons/Time.svg' alt='Timer' width={16} height={100} className='mx-2' />
           </div>
         </div>
         <div className="row-start-3">
@@ -91,12 +92,15 @@ const CodeValidation = () => {
             hover="hover:border-[#2D74FF]"
             type="submit"
             isFull={true}
-            hasRightIcon={true}
             onClick={handleRestart}
             isDisable={time > 0}
-            icon={<Recycle />}
           >
-            <span>ارسال کد تایید</span>
+            <span className="flex items-center">
+              <span className="ml-4">
+                تغییر شماره تلفن
+              </span>
+              <Recycle />
+            </span>
           </Button>
         </div>
         <div className="row-start-3">
@@ -106,10 +110,13 @@ const CodeValidation = () => {
             hover="hover:border-[#2D74FF]"
             type="submit"
             isFull={true}
-            hasLeftIcon={true}
-            icon={<ArrowDown className="rotate-90" />}
           >
-            <span>ساخت حساب کاربری</span>
+            <span className="flex items-center">
+              <span className="ml-4">
+                ساخت حساب کاربری
+              </span>
+              <LeftArrow2 />
+            </span>
           </Button>
         </div>
       </form>

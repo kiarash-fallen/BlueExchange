@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import Button from '../buttons/Button';
-import ArrowDown from '../ui/icons/ArrowDown';
+import LeftArrow2 from '../ui/icons/LeftArrow2';
 
-const SignUp = ({signingUp}) => {
-  const [type , setType ] = useState(true)
-  const [check , setCheck] = useState(false)
+const SignUp = ({ signingUp }) => {
+  const [type, setType] = useState(true)
+  const [check, setCheck] = useState(false)
   const {
     register,
     handleSubmit,
@@ -41,7 +41,7 @@ const SignUp = ({signingUp}) => {
           className="absolute bottom-3 left-4 cursor-pointer"
           onClick={() => setType(!type)}
         >
-          <input type="checkbox" className="w-5 h-5" onClick={() => setCheck(true)} checked={ check ? true : false}/>
+          <input type="checkbox" className="w-5 h-5" onClick={() => setCheck(true)} checked={check ? true : false} />
         </label>
       </div>
       <span className='absolute left-[50.7%] bottom-[82%] text-sm'>یا</span>
@@ -62,7 +62,7 @@ const SignUp = ({signingUp}) => {
           htmlFor="password"
           className="absolute bottom-3 left-4 cursor-pointer"
         >
-          <input type="checkbox" checked={ check ? false : true} onClick={() => setCheck(false)} className="w-5 h-5" />
+          <input type="checkbox" checked={check ? false : true} onClick={() => setCheck(false)} className="w-5 h-5" />
         </label>
       </div>
       <div className="col-span-2 row-start-4">
@@ -73,10 +73,11 @@ const SignUp = ({signingUp}) => {
           type="submit"
           onClick={() => signingUp()}
           isFull={true}
-          hasLeftIcon={true}
-          icon={<ArrowDown className="rotate-90" />}
         >
-          <span>ارسال کد تایید</span>
+          <span className="flex items-center">
+            <span className="ml-4">ارسال کد تایید</span>
+            <LeftArrow2 />
+          </span>
         </Button>
       </div>
     </form>
