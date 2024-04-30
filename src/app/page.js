@@ -10,6 +10,7 @@ import CurrentPrice from "../../components/home/CurrentPrice";
 import UserConsentContainer from "../../components/home/UserConsentContainer";
 import Blogs from "../../components/home/Blogs";
 import HandlyMarket from "../../components/home/HandlyMarket";
+import Checkbox from "../../components/checkbox/Checkbox";
 
 export default function Home() {
   // i will fix the padding 

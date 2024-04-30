@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import Button from '../buttons/Button';
 import LeftArrow2 from '../ui/icons/LeftArrow2';
+import Checkbox from '../checkbox/Checkbox';
 
 const SignUp = ({ signingUp }) => {
   const [type, setType] = useState(true)
@@ -36,13 +37,19 @@ const SignUp = ({ signingUp }) => {
           <span>شماره تماس</span>
           {errors.password && <span className="text-red-700">*</span>}
         </label>
-        <label
+        {/* <label
           htmlFor="email"
           className="absolute bottom-3 left-4 cursor-pointer"
           onClick={() => setType(!type)}
         >
           <input type="checkbox" className="w-5 h-5" onClick={() => setCheck(true)} checked={check ? true : false} />
-        </label>
+        </label> */}
+        <div
+          className="absolute bottom-3 left-4 cursor-pointer"
+          onClick={() => setType(!type)}
+        >
+          <Checkbox id="email" checked={check ? true : false} onChange={() => setCheck(true)} />
+        </div>
       </div>
       <span className='absolute left-[50.7%] bottom-[82%] text-sm'>یا</span>
       <div className="relative">
@@ -58,12 +65,18 @@ const SignUp = ({ signingUp }) => {
           <span className="">ایمیل شما</span>
           {errors.password && <span className="text-red-700">*</span>}
         </label>
-        <label
+        {/* <label
           htmlFor="password"
           className="absolute bottom-3 left-4 cursor-pointer"
         >
           <input type="checkbox" checked={check ? false : true} onClick={() => setCheck(false)} className="w-5 h-5" />
-        </label>
+        </label> */}
+        <div
+          className="absolute bottom-3 left-4 cursor-pointer"
+        >
+          <Checkbox id="password" checked={check ? false : true} onChange={() => setCheck(false)} />
+        </div>
+
       </div>
       <div className="col-span-2 row-start-4">
         <Button
