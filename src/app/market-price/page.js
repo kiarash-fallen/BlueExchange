@@ -1,4 +1,5 @@
 import AdsContaimer from "../../../components/market-price/AdsContaimer";
+import PaginationContainer from "../../../components/pagination/PaginationContainer";
 import PriceTable from "../../../components/table/PriceTable";
 import Breadcrums from "../../../components/ui/Breadcrums";
 
@@ -11,6 +12,7 @@ export default function Home() {
             ]} />
             <AdsContaimer />
             <PriceTable />
+            <PaginationContainer />
         </div>
     );
 }

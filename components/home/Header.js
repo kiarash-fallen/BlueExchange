@@ -49,7 +49,8 @@ const Header = () => {
 
             </div>
         </div>
-        <div className="flex justify-end items-center">
+        {/* change */}
+        <div className="flex justify-end items-center ml-12">
             <BuyDigitalCurrency />
         </div>
     </header >

@@ -11,23 +11,12 @@ import GreenChart from "../../public/assests/images/Group 889.svg";
 import RedChart from "../../public/assests/images/Vector 7.svg";
 import { usePathname } from 'next/navigation'
 import Heart from '../ui/icons/Heart'
-import Pagination from '../pagination/Pagination'
 
-const data = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 }, { id: 3 },];
-let PageSize = 1;
 
 function PriceTable() {
-
     const [profitCurrency, setProfitCurrency] = useState(0);
     const [currencyType, setCurrencyType] = useState(0);
-    const [currentPage, setCurrentPage] = useState(1);
     const path = usePathname();
-    const currentTableData = useMemo(() => {
-        const firstPageIndex = (currentPage - 1) * PageSize;
-        const lastPageIndex = firstPageIndex + PageSize;
-        return data.slice(firstPageIndex, lastPageIndex);
-    }, [currentPage]);
-    console.log(path)
     return (
         <>
             <div className="box-2 mt-10 flex items-center justify-between">
@@ -194,15 +183,6 @@ function PriceTable() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
-                <Pagination
-                    currentPage={currentPage}
-                    totalCount={data.length}
-                    pageSize={PageSize}
-                    onPageChange={page => setCurrentPage(page)}
-                />
-            </div>
-
         </>
     )
 }

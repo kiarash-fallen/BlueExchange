@@ -1,5 +1,3 @@
-"use client";
-import Image from "next/image";
 import TopServices from "../../components/home/TopServices";
 import DigitalCurrencies from "../../components/home/DigitalCurrencies";
 import Info from "../../components/home/Info";

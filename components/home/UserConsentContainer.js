@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import BEX from '../layout/BEX';
 import UserConsent from './UserConsent';
@@ -6,7 +7,7 @@ import { DotButton, useDotButton } from '../Embla/EmblaCarouselDotButton'
 import EmblaCarousel from '../Embla/EmblaCarousel';
 
 const OPTIONS = {
-    dragFree: false,
+  dragFree: false,
   loop: true,
   align: "center",
   direction: "rtl",
@@ -48,9 +49,8 @@ const UserConsentContainer = () => {
                   <DotButton
                     key={index}
                     onClick={() => onDotButtonClick(index)}
-                    className={`embla__dot bg-[#AAAAAA] size-2 rounded-full ml-2 ${
-                      index === selectedIndex ? "!bg-[#2D74FF] !w-[24px]" : ""
-                    }`}
+                    className={`embla__dot bg-[#AAAAAA] size-2 rounded-full ml-2 ${index === selectedIndex ? "!bg-[#2D74FF] !w-[24px]" : ""
+                      }`}
                   />
                 ))}
               </div>

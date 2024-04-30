@@ -1,6 +1,6 @@
+"use client";
 import React from 'react'
 import CurrencyCart from './CurrencyCart';
-import EmblaCarousel from "../Embla/EmblaCarousel";
 import { DotButton, useDotButton } from '../Embla/EmblaCarouselDotButton'
 import useEmblaCarousel from 'embla-carousel-react';
 

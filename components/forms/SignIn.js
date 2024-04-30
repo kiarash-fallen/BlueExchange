@@ -6,9 +6,10 @@ import ArrowDown from '../ui/icons/ArrowDown'
 import Button from '../buttons/Button'
 import Image from 'next/image'
 import Eye from '../../public/assests/Icons/Eye'
+import LeftArrow2 from '../ui/icons/LeftArrow2'
 
 const SignIn = () => {
-  const [type , setType ] = useState(true)
+  const [type, setType] = useState(true)
   const {
     register,
     handleSubmit,
@@ -79,9 +80,11 @@ const SignIn = () => {
           type="submit"
           isFull={true}
           hasLeftIcon={true}
-          icon={<ArrowDown className="rotate-90" />}
         >
-          <span>ورود به حساب کاربری</span>
+          <span className="flex items-center">
+            <span className="ml-4"> ورود به حساب کاربری</span>
+            <LeftArrow2 />
+          </span>
         </Button>
       </div>
     </form>
