@@ -6,7 +6,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
     <>
       {href ? (
         <Link
-          className={`hover-animation inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+          className={`hover-animation relative inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"}`}
@@ -22,12 +22,12 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           </span>
 
           <span
-            className={`w-2/3 h-2 bottom-0 blur-[10px] rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
+            className={`w-0 h-0 blur-[10px] rounded-xl mx-auto left-1/2 -translate-x-1/2 bottom-2 absolute -mb-2 group-hover:h-1.5 group-hover:duration-300 group-hover:w-2/3 ${color}`}
           ></span>
         </Link>
       ) : (
         <button
-          className={`hover-animation inline-block bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
+          className={`hover-animation relative inline-block bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
             } ${isFull ? "w-full" : "w-auto"} ${active && activeColor}`}
@@ -47,7 +47,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
             className={`w-2/3 h-2 bottom-0 blur-md rounded-xl mx-auto -mb-2 flex ${color}`}
           ></span>}
           <span
-            className={`w-2/3 h-2 bottom-0 blur-[10px] rounded-xl mx-auto -mb-2 hidden group-hover:flex ${color}`}
+            className={`w-0 h-0 blur-[10px] rounded-xl mx-auto -mb-2 group-hover:h-1.5 left-1/2 -translate-x-1/2 bottom-2 absolute group-hover:duration-300 group-hover:w-2/3 ${color}`}
           ></span>
         </button>
       )}

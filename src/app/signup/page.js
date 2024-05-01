@@ -17,7 +17,7 @@ const Signup = () => {
       <Breadcrums
         breadcrums={[{ label: "خانه", link: "/" }, { label: "ثبت نام" }]}
       />
-      <div className="border flex justify-between border-[#373737] rounded-[52px] p-8 bg-[#323232] bg-opacity-[36%] mb-[156px]">
+      <div className="border flex justify-between border-[#373737] rounded-[52px] p-8 bg-[#323232] bg-opacity-[36%] mb-[156px] mt-4">
         <div className="w-[38%]">
           <div className="flex items-center">
             <BEX />

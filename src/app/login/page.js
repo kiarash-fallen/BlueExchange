@@ -6,16 +6,15 @@ import AddPerson from "../../../components/ui/icons/AddPerson";
 import Person from "../../../components/ui/icons/Person";
 import Image from "next/image";
 import SignIn from "../../../components/forms/SignIn";
+import Breadcrums from "../../../components/ui/Breadcrums";
 
 const Login = () => {
   return (
     <div className="text-white">
-      <div className="flex items-center">
-        <h6 className="text-[#AAAAAA]">خانه</h6>
-        <ArrowDown className="!stroke-[#AAAAAA] rotate-90 mr-3" />
-        <h6 className="mr-3">ورود حساب کاربری</h6>
-      </div>
-      <div className="border flex justify-between border-[#373737] rounded-[52px] p-8 bg-[#323232] bg-opacity-[36%] mb-[156px]">
+      <Breadcrums
+        breadcrums={[{ label: "خانه", link: "/" }, { label: "ورود حساب کاربری" }]}
+      />
+      <div className="border flex justify-between border-[#373737] rounded-[52px] p-8 bg-[#323232] bg-opacity-[36%] mb-[156px] mt-4">
         <div className="w-[38%]">
           <div className="flex items-center">
             <BEX />

@@ -34,7 +34,7 @@ const AboutBlueExchange = () => {
           </div>
         </div>
         <div className="grid grid-rows-2 grid-flow-col gap-4 -mt-10">
-          <div className="bg-[#2C2C2C] rounded-[32px] col-span-1 h-[150px] w-[420px] pr-4 pt-4 bg-[url('/assests/images/Rocket.png')] bg-no-repeat bg-left-bottom">
+          <div className="bg-[#2C2C2C] rounded-[32px] col-span-1 w-[420px] pr-4 pt-4 bg-[url('/assests/images/Rocket.png')] bg-no-repeat bg-left-bottom">
             <div className="bg-white p-2 rounded-2xl w-fit mr-2">
               <DollarSign className='fill-[#363636]'/>
             </div>
@@ -42,7 +42,7 @@ const AboutBlueExchange = () => {
               معامله آسان و راحت با بهترین پلتفرم های معامله
             </h3>
           </div>
-          <div className="bg-[#2D74FF] rounded-[32px] col-span-1 h-[150px] w-[420px] pr-4 pt-4 bg-[url('/assests/images/GoldenSecurity.png')] bg-no-repeat bg-left-bottom">
+          <div className="bg-[#2D74FF] rounded-[32px] col-span-1 w-[420px] pr-4 pt-4 bg-[url('/assests/images/GoldenSecurity.png')] bg-no-repeat bg-left-bottom  self-stretch">
             <div className="bg-white p-2 rounded-2xl w-fit mr-2">
               <Image
                 alt="DollarSign"

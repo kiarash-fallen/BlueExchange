@@ -62,7 +62,7 @@ const CodeValidation = () => {
               maxLength={1}
               value={digit}
               onChange={(e) => handleChange(e, index)}
-              className="w-12 h-12 border border-gray-300 rounded-md text-center mx-1"
+              className="w-12 h-12 border focus:border-white border-[#565656] text-white bg-[#252525] rounded-xl text-center mx-1"
             />
           ))}
         </div>
