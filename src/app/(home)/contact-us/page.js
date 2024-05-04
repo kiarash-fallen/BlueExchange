@@ -1,9 +1,9 @@
 import React from 'react'
-import Breadcrums from '../../../components/ui/Breadcrums'
-import IconContainer from '../../../components/ui/IconContainer'
-import Button from '../../../components/buttons/Button'
-import Call from '../../../components/ui/icons/Call'
-import ContactForm from '../../../components/forms/ContactForm'
+import Breadcrums from '../../../../components/ui/Breadcrums'
+import IconContainer from '../../../../components/ui/IconContainer'
+import Button from '../../../../components/buttons/Button'
+import Call from '../../../../components/ui/icons/Call'
+import ContactForm from '../../../../components/forms/ContactForm'
 
 function page() {
     return (

@@ -1,13 +1,13 @@
 import React from 'react'
-import Breadcrums from '../../../components/ui/Breadcrums'
-import IconContainer from '../../../components/ui/IconContainer'
-import Blogs from "../../../public/assests/images/blogs.png"
+import Breadcrums from '../../../../components/ui/Breadcrums'
+import IconContainer from '../../../../components/ui/IconContainer'
+import Blogs from "../../../../public/assests/images/blogs.png"
 import Image from 'next/image'
-import BlogCart from '../../../components/blogs/BlogCart'
-import BlogSlider from '../../../components/blogs/BlogSlider'
-import Input2 from '../../../components/input/Input2'
-import Search from '../../../components/ui/icons/Search'
-import PaginationContainer from '../../../components/pagination/PaginationContainer'
+import BlogCart from '../../../../components/blogs/BlogCart'
+import BlogSlider from '../../../../components/blogs/BlogSlider'
+import Input2 from '../../../../components/input/Input2'
+import Search from '../../../../components/ui/icons/Search'
+import PaginationContainer from '../../../../components/pagination/PaginationContainer'
 
 function page() {
     return (

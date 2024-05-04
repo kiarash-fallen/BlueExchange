@@ -1,9 +1,9 @@
-import Navbar from "../../components/layout/Navbar";
-import "./globals.css";
-import '../../components/Embla/css/embla.css';
-import Footer from "../../components/layout/Footer";
-import ContactUsFooter from "../../components/layout/ContactUsFooter";
-import Blue from "../../components/layout/Blue";
+import Navbar from "../../../components/layout/Navbar";
+import "../globals.css";
+import '../../../components/Embla/css/embla.css';
+import Footer from "../../../components/layout/Footer";
+import ContactUsFooter from "../../../components/layout/ContactUsFooter";
+import Blue from "../../../components/layout/Blue";
 
 export const metadata = {
   title: "Create Next App",

@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from 'react'
-import Breadcrums from '../../../components/ui/Breadcrums';
-import BEX from '../../../components/layout/BEX';
+import Breadcrums from '../../../../components/ui/Breadcrums';
+import BEX from '../../../../components/layout/BEX';
 import Image from 'next/image';
-import Flash from '../../../components/ui/icons/Flash';
-import Currencies from '../../../components/ui/Currencies';
-import EmblaCarousel from '../../../components/Embla/EmblaCarousel';
-import BuyDCs, { SellDCs } from '../../../components/forms/BuyAndSellDC';
-import Group9998 from "../../../public/assests/images/Group9998.png";
+import Flash from '../../../../components/ui/icons/Flash';
+import Currencies from '../../../../components/ui/Currencies';
+import EmblaCarousel from '../../../../components/Embla/EmblaCarousel';
+import BuyDCs, { SellDCs } from '../../../../components/forms/BuyAndSellDC';
+import Group9998 from "../../../../public/assests/images/Group9998.png";
 
 const BuyDigitalCurrency = () => {
   const [sellBuy , setSellBuy] = useState(false)

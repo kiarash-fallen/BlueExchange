@@ -1,21 +1,18 @@
-"use client"
-import React, { useState } from 'react'
-import Breadcrums from '../../../components/ui/Breadcrums'
-import SignUp from '../../../components/forms/SignUp';
-import Image from 'next/image';
-import Button from '../../../components/buttons/Button';
-import AddPerson from '../../../components/ui/icons/AddPerson';
-import Person from '../../../components/ui/icons/Person';
-import BEX from '../../../components/layout/BEX';
-import CodeValidation from '../../../components/forms/CodeValidation';
+import React from "react";
+import ArrowDown from "../../../../components/ui/icons/ArrowDown";
+import BEX from "../../../../components/layout/BEX";
+import Button from "../../../../components/buttons/Button";
+import AddPerson from "../../../../components/ui/icons/AddPerson";
+import Person from "../../../../components/ui/icons/Person";
+import Image from "next/image";
+import SignIn from "../../../../components/forms/SignIn";
+import Breadcrums from "../../../../components/ui/Breadcrums";
 
-const Signup = () => {
-  const [ signingUp, setSigningUp ] = useState(false);
-
+const Login = () => {
   return (
     <div className="text-white">
       <Breadcrums
-        breadcrums={[{ label: "خانه", link: "/" }, { label: "ثبت نام" }]}
+        breadcrums={[{ label: "خانه", link: "/" }, { label: "ورود حساب کاربری" }]}
       />
       <div className="border flex justify-between border-[#373737] rounded-[52px] p-8 bg-[#323232] bg-opacity-[36%] mb-[156px] mt-4">
         <div className="w-[38%]">
@@ -93,13 +90,13 @@ const Signup = () => {
             <div className="LineGradient h-0.5 w-[40%] rotate-180"></div>
           </div>
           <div className="mt-12">
-            {signingUp ? <CodeValidation signingUp={() => setSigningUp(false)}/> : <SignUp signingUp={() => setSigningUp(true)}/>}
+            <SignIn />
           </div>
         </div>
-        <div className="w-[58%] bg-[#323232] bg-opacity-[36%] border border-[#373737] rounded-[52px]"></div>
+        <div className='w-[58%] bg-[#323232] bg-opacity-[36%] border border-[#373737] rounded-[52px]'></div>
       </div>
     </div>
   );
-}
+};
 
-export default Signup;
+export default Login;
