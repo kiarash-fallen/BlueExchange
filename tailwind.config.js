@@ -12,6 +12,9 @@ module.exports = {
       // backgroundImage: {
       //   'home': "url('/public/assets/images/bg/Home Page ( 1440 size ).png')",
       // }
+      boxShadow: {
+        'sidebar': '-4px 0px 16px rgba(0, 0, 0, 0.08)',
+      }
     },
   },
   plugins: [],
