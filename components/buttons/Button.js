@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-function Button({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor }) {
+function Button({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor, iconCenter }) {
   return (
     <>
       {href ? (
@@ -13,7 +13,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           href={href}
         >
           <span className={`flex justify-center items-center ${!icon && "justify-center"}`} >
-            <span className={` flex items-center ${isFull && icon && "w-full justify-between"}`}>
+            <span className={` flex items-center ${isFull && icon && !iconCenter && "w-full justify-between"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
@@ -24,7 +24,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           <span
             className={`w-0 h-0 blur-[10px] rounded-xl mx-auto left-1/2 -translate-x-1/2 bottom-2 absolute -mb-2 group-hover:h-1.5 group-hover:duration-300 group-hover:w-2/3 ${color}`}
           ></span>
-        </Link>
+        </Link >
       ) : (
         <button
           className={`hover-animation relative inline-block bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
@@ -36,7 +36,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           onClick={onClick}
         >
           <span className={`flex items-center ${!icon && "justify-center"}`} >
-            <span className={`flex items-center ${isFull && icon && "w-full justify-between"}`}>
+            <span className={`flex items-center ${isFull && icon && !iconCenter && "w-full justify-between"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
               <span className={active && "!text-white"}>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
@@ -50,7 +50,8 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
             className={`w-0 h-0 blur-[10px] rounded-xl mx-auto -mb-2 group-hover:h-1.5 left-1/2 -translate-x-1/2 bottom-2 absolute group-hover:duration-300 group-hover:w-2/3 ${color}`}
           ></span>
         </button>
-      )}
+      )
+      }
     </>
   );
 }

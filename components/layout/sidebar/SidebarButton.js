@@ -9,7 +9,7 @@ function SidebarButton({ item, onClick, open }) {
         <div className="group relative mb-1">
             <button
                 type='button'
-                className={`w-full flex justify-between items-center rounded-2xl border-b border-b-transparent p-3 transition-all duration-300 hover:bg-[#323232]  hover:text-white hover:border-b-[#2D74FF] ${(item.url === pathname) ? "text-white !border-b-[#2D74FF] bg-[#323232]" : "text-[#6A6A6A]"}`}
+                className={`w-full flex justify-between items-center rounded-2xl border-b border-b-transparent p-3 transition-all duration-300 hover:bg-[#323232]  hover:text-white hover:border-b-[#2D74FF] ${(item.url === pathname) ? "text-white !border-b-[#2D74FF] bg-[#323232]" : "text-[#6A6A6A]"} ${!item.hasArrow ? "relative z-50" : ""}`}
                 onClick={onClick}>
                 <span className='flex items-center'>
                     {item.icon}

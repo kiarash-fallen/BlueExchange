@@ -1,4 +1,3 @@
-import Navbar from "../../../../components/layout/Navbar";
 import NavbarDashboard from "../../../../components/layout/dashboard/NavbarDashboard";
 import Sidebar from "../../../../components/layout/sidebar/Sidebar";
 import "../../globals.css";
@@ -10,17 +9,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fa">
       <body>
         <section className="flex">
           <Sidebar />
-          <section className="w-full">
+          <section className="w-[86%] h-screen overflow-y-auto ">
             <NavbarDashboard />
-            {children}
+            <section className='max-w-[1440px] p-4 pt-28 '>
+              {children}
+            </section>
           </section>
-
         </section>
-
       </body>
     </html>
   )

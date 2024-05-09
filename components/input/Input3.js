@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input3 = ({ label, id, focus, color, isDisable, type, placeholder, hasError, defaultValue, errorMessage, hasLeftIcon, hasRightIcon, clickableIcon, icon, register, handleClick, textColor }) => {
+const Input3 = ({ label, id, focus, color, isDisable, type, placeholder, hasError, defaultValue, errorMessage, hasLeftIcon, hasRightIcon, clickableIcon, icon, register, handleClick, textColor, value }) => {
 
     return (
         <div className='relative'>
@@ -17,6 +17,7 @@ const Input3 = ({ label, id, focus, color, isDisable, type, placeholder, hasErro
                     placeholder={placeholder}
                     className={`bg-transparent border-none outline-none w-10/12 peer placeholder-[#CCCCCC] text-white`}
                     defaultValue={defaultValue}
+                    value={value}
                     {...register}
                 />
                 {hasRightIcon ? <>

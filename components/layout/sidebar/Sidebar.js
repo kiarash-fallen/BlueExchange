@@ -12,6 +12,11 @@ import UserAdd from '../../ui/icons/UserAdd';
 import Comment from '../../ui/icons/Comment';
 import MoneyCheckEdit from '../../ui/icons/MoneyCheckEdit';
 import SidebarItem from './SidebarItem';
+import Wallet from '../../ui/icons/Wallet';
+import ChartHistogram from '../../ui/icons/ChartHistogram';
+import Button from '../../buttons/Button';
+import SignOut from '../../ui/icons/SignOut';
+import InviteFreinds from './InviteFreinds';
 
 const items = [
     {
@@ -37,7 +42,7 @@ const items = [
     {
         name: "کیف پول",
         url: "/dashboard/wallet",
-        icon: <User />,
+        icon: <Wallet />,
         hasArrow: true,
         subItems: [
             {
@@ -62,7 +67,7 @@ const items = [
     {
         name: "بازار",
         url: "/dashboard/market",
-        icon: <Apps />,
+        icon: <ChartHistogram />,
         hasArrow: false,
     },
     {
@@ -103,6 +108,12 @@ const items = [
         hasArrow: false,
     },
     {
+        name: "دعوت دوستان",
+        url: "/dashboard/invite-friends",
+        icon: <UserAdd />,
+        hasArrow: false,
+    },
+    {
         name: "پیام های من",
         url: "/dashboard/messages",
         icon: <Comment />,
@@ -118,11 +129,27 @@ const items = [
 
 function Sidebar() {
     return (
-        <aside className="bg-[#262626] shadow-sidebar w-[192px] h-screen p-4">
-            <div className="bg-[#393939] h-12 rounded-2xl">
+        <aside dir='ltr' className="bg-[#262626] shadow-sidebar w-[14%] p-4 h-screen overflow-y-auto">
+            <div dir='rtl'>
+                <div className="bg-[#393939] h-12 rounded-2xl">
+                </div>
+                <div className="border-y-b border-y-2 py-4 mt-4 border-[#3C3C3C]">
+                    {items.map(item => <SidebarItem key={item.id} item={item} />)}
+                </div>
+                <div className="my-4">
+                    <Button
+                        isFull={true}
+                        iconCenter={true}
+                        href="/login"
+                        hasRightIcon={true}
+                        icon={<SignOut />}
+                        color="bg-[#FF5C5C]"
+                        hover="hover:border-[#FF5C5C]">
+                        خروج
+                    </Button>
+                </div>
+                <InviteFreinds />
             </div>
-            <div className="border-b border-2 my-4 border-[#3C3C3C]"></div>
-            {items.map(item => <SidebarItem key={item.id} item={item} />)}
 
         </aside>
     )
