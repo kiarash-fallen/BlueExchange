@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Breadcrums from '../../../../components/ui/Breadcrums'
 import IconContainer from '../../../../components/ui/IconContainer'
 import Blogs from "../../../../public/assests/images/blogs.png"
@@ -9,7 +9,9 @@ import Input2 from '../../../../components/input/Input2'
 import Search from '../../../../components/ui/icons/Search'
 import PaginationContainer from '../../../../components/pagination/PaginationContainer'
 
-function page() {
+function page(props) {
+    console.log(props)
+
     return (
         <>
             <div className="mt-4">
