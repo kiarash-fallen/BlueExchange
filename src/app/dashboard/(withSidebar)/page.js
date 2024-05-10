@@ -21,7 +21,7 @@ function Page() {
                 <WalletCart />
                 <FinancialTransactions />
                 <BuyAndSellFast />
-                <Store />
+                <Store height="h-[400px]" />
                 <BuyAndSellPerfectMoney />
                 <Messages />
             </div>

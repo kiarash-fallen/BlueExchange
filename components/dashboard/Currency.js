@@ -28,7 +28,7 @@ function Currency() {
                 <span className="text-[#FF5C5C]">65.200 ت</span>
             </div>
             <div className="flex justify-center">
-                <div className="absolute m-auto w-[50%] bottom-0 h-[20px] bg-[#22F38F] opacity-75	 blur-[48px]"></div>
+                <div className="absolute m-auto w-[50%] bottom-0 h-[20px] bg-[#22F38F] opacity-75 blur-[48px]"></div>
             </div>
         </div>
     )

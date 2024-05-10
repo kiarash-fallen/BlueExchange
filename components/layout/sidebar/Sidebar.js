@@ -17,6 +17,11 @@ import ChartHistogram from '../../ui/icons/ChartHistogram';
 import Button from '../../buttons/Button';
 import SignOut from '../../ui/icons/SignOut';
 import InviteFreinds from './InviteFreinds';
+import UserEdit from '../../ui/icons/UserEdit';
+import Bank from '../../ui/icons/Bank';
+import Bell2 from '../../ui/icons/Bell2';
+import Marker from '../../ui/icons/Marker';
+import Setting from '../../ui/icons/Setting';
 
 const items = [
     {
@@ -32,9 +37,33 @@ const items = [
         hasArrow: true,
         subItems: [
             {
-                name: "???",
-                url: "/???",
-                icon: <Apps />,
+                name: "مشخصات کاربری",
+                url: "/dasboard/account/profile",
+                icon: <UserEdit />,
+                hasArrow: false,
+            },
+            {
+                name: "حساب های بانکی",
+                url: "/dasboard/account/banck-accounts",
+                icon: <Bank />,
+                hasArrow: false,
+            },
+            {
+                name: "هشدار قیمت",
+                url: "/dasboard/account/price-warning",
+                icon: <Bell2 />,
+                hasArrow: false,
+            },
+            {
+                name: "مدیریت آدرس",
+                url: "/dasboard/account/adress-managment",
+                icon: <Marker />,
+                hasArrow: false,
+            },
+            {
+                name: "تنظیمات",
+                url: "/dasboard/account/setting",
+                icon: <Setting />,
                 hasArrow: false,
             },
         ]
@@ -140,7 +169,7 @@ function Sidebar() {
                     <Button
                         isFull={true}
                         iconCenter={true}
-                        href="/login"
+                        href="/"
                         hasRightIcon={true}
                         icon={<SignOut />}
                         color="bg-[#FF5C5C]"

@@ -10,7 +10,7 @@ import Line4 from '../ui/icons/Line4';
 function StoreTable() {
 
     return (
-        <div className='h-52 overflow-auto'>
+        <div className=' overflow-auto'>
             <div className="w-full grid grid-cols-4 my-5">
                 <span className="text-white font-medium">ارز</span>
                 <span className="text-white font-medium">قیمت تومانی</span>

@@ -95,6 +95,11 @@ body {
 }
 
 
+.grid-h-auto {
+grid-template-rows: auto 1fr;
+}
+
+
 @layer components {}
 
 
@@ -138,7 +143,15 @@ body {
   .box-8 {
     @apply rounded-3xl bg-[#333333] p-2;
   }
-
+  .box-9 {
+    @apply bg-[#303030] rounded-lg p-2;
+  }
+  .box-10 {
+    @apply bg-[#202020] rounded-lg p-2;
+  }
+  .box-11 {
+    @apply bg-[#262626] p-4 rounded-4xl;
+  }
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
   }
