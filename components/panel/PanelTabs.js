@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 
-function PanelTabs({ list, bgActive, widthFull,childWidth }) {
+function PanelTabs({ list }) {
     const [active, setActive] = useState(0);
     return (
         <>

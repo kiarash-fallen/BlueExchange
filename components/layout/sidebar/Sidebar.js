@@ -12,6 +12,16 @@ import UserAdd from '../../ui/icons/UserAdd';
 import Comment from '../../ui/icons/Comment';
 import MoneyCheckEdit from '../../ui/icons/MoneyCheckEdit';
 import SidebarItem from './SidebarItem';
+import Wallet from '../../ui/icons/Wallet';
+import ChartHistogram from '../../ui/icons/ChartHistogram';
+import Button from '../../buttons/Button';
+import SignOut from '../../ui/icons/SignOut';
+import InviteFreinds from './InviteFreinds';
+import UserEdit from '../../ui/icons/UserEdit';
+import Bank from '../../ui/icons/Bank';
+import Bell2 from '../../ui/icons/Bell2';
+import Marker from '../../ui/icons/Marker';
+import Setting from '../../ui/icons/Setting';
 
 const items = [
     {
@@ -27,9 +37,33 @@ const items = [
         hasArrow: true,
         subItems: [
             {
-                name: "???",
-                url: "/???",
-                icon: <Apps />,
+                name: "مشخصات کاربری",
+                url: "/dasboard/account/profile",
+                icon: <UserEdit />,
+                hasArrow: false,
+            },
+            {
+                name: "حساب های بانکی",
+                url: "/dasboard/account/banck-accounts",
+                icon: <Bank />,
+                hasArrow: false,
+            },
+            {
+                name: "هشدار قیمت",
+                url: "/dasboard/account/price-warning",
+                icon: <Bell2 />,
+                hasArrow: false,
+            },
+            {
+                name: "مدیریت آدرس",
+                url: "/dasboard/account/adress-managment",
+                icon: <Marker />,
+                hasArrow: false,
+            },
+            {
+                name: "تنظیمات",
+                url: "/dasboard/account/setting",
+                icon: <Setting />,
                 hasArrow: false,
             },
         ]
@@ -37,7 +71,7 @@ const items = [
     {
         name: "کیف پول",
         url: "/dashboard/wallet",
-        icon: <User />,
+        icon: <Wallet />,
         hasArrow: true,
         subItems: [
             {
@@ -62,7 +96,7 @@ const items = [
     {
         name: "بازار",
         url: "/dashboard/market",
-        icon: <Apps />,
+        icon: <ChartHistogram />,
         hasArrow: false,
     },
     {
@@ -103,6 +137,12 @@ const items = [
         hasArrow: false,
     },
     {
+        name: "دعوت دوستان",
+        url: "/dashboard/invite-friends",
+        icon: <UserAdd />,
+        hasArrow: false,
+    },
+    {
         name: "پیام های من",
         url: "/dashboard/messages",
         icon: <Comment />,
@@ -110,7 +150,7 @@ const items = [
     },
     {
         name: "تاریخچه تراکنشات",
-        url: "/dashboard/messages",
+        url: "/dashboard/transaction-history",
         icon: <MoneyCheckEdit />,
         hasArrow: false,
     },
@@ -118,11 +158,27 @@ const items = [
 
 function Sidebar() {
     return (
-        <aside className="bg-[#262626] shadow-sidebar w-[192px] h-screen p-4">
-            <div className="bg-[#393939] h-12 rounded-2xl">
+        <aside dir='ltr' className="bg-[#262626] shadow-sidebar w-[14%] p-4 h-screen overflow-y-auto">
+            <div dir='rtl'>
+                <div className="bg-[#393939] h-12 rounded-2xl">
+                </div>
+                <div className="border-y-b border-y-2 py-4 mt-4 border-[#3C3C3C]">
+                    {items.map(item => <SidebarItem key={item.id} item={item} />)}
+                </div>
+                <div className="my-4">
+                    <Button
+                        isFull={true}
+                        iconCenter={true}
+                        href="/"
+                        hasRightIcon={true}
+                        icon={<SignOut />}
+                        color="bg-[#FF5C5C]"
+                        hover="hover:border-[#FF5C5C]">
+                        خروج
+                    </Button>
+                </div>
+                <InviteFreinds />
             </div>
-            <div className="border-b border-2 my-4 border-[#3C3C3C]"></div>
-            {items.map(item => <SidebarItem key={item.id} item={item} />)}
 
         </aside>
     )

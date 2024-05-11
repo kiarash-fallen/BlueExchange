@@ -95,6 +95,11 @@ body {
 }
 
 
+.grid-h-auto {
+grid-template-rows: auto 1fr;
+}
+
+
 @layer components {}
 
 
@@ -127,6 +132,26 @@ body {
     @apply box-shadow-3 rounded-[40px] bg-[#242424] p-8;
   }
 
+  .box-6 {
+    @apply rounded-3xl bg-[#262626] p-4;
+  }
+
+  .box-7 {
+    @apply rounded-3xl bg-[#262626] p-2;
+  }
+
+  .box-8 {
+    @apply rounded-3xl bg-[#333333] p-2;
+  }
+  .box-9 {
+    @apply bg-[#303030] rounded-lg p-2;
+  }
+  .box-10 {
+    @apply bg-[#202020] rounded-lg p-2;
+  }
+  .box-11 {
+    @apply bg-[#262626] p-4 rounded-4xl;
+  }
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
   }
@@ -190,4 +215,27 @@ body {
   background: linear-gradient(90deg, rgba(176, 176, 176, 0) 0%, rgba(176, 176, 176, 1) 50%,rgba(176, 176, 176, 0) 100% );
 }
 
+.wallet-background {
+  background: linear-gradient(180deg, #2D74FF 0%, #22F38F 100%);
+}
 /* border-bottom: 1px solid #2D74FF; */
+
+*::-webkit-scrollbar {
+  width: 4px;               /* width of the entire scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: #565656;        /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #2D74FF;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
+}
+/*Styling the scrollbar in Firefox */
+*::-moz-scrollbar {
+  width: 4px;
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: #2D74FF;
+}
