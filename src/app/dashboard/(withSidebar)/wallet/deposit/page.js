@@ -3,13 +3,14 @@ import PanelTabs from '../../../../../../components/panel/PanelTabs'
 import Deposit from '../../../../../../components/dashboard/Deposit'
 import Withdrawal from '../../../../../../components/dashboard/Withdrawal'
 import Store from '../../../../../../components/dashboard/Store'
+import PanelTabs4 from '../../../../../../components/panel/PanelTabs4'
 
 function page() {
     return (
         <div className="grid grid-cols-2 gap-4">
             <div>
                 <div className="box-6 ">
-                    <PanelTabs
+                    <PanelTabs4
                         btnFull={true}
                         list={[
                             { name: " تومان ", content: <Deposit /> },
