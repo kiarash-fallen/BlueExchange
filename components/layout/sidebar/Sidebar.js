@@ -150,7 +150,7 @@ const items = [
     },
     {
         name: "تاریخچه تراکنشات",
-        url: "/dashboard/messages",
+        url: "/dashboard/transaction-history",
         icon: <MoneyCheckEdit />,
         hasArrow: false,
     },

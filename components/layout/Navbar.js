@@ -33,7 +33,7 @@ const Navbar = () => {
             </ul>
 
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center [&>*]:ml-2 text-[#AAAAAA]">
             <IconButton href="/test" icon={<UserHeadset />} />
             <Button
                 href="/login"
