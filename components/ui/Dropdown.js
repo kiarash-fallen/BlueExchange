@@ -1,5 +1,8 @@
+"use client"
 import { useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
+
+
 
 const Dropdown = ({ textClass, title, bgColor, rightIcon, leftIcon }) => {
     const [open, setOpen] = useState(false);
