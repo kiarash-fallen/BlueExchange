@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import React from 'react'
 
-function IconButton({ isFull, isDisable, type, href, icon, onClick, badge, filled }) {
+function IconButton({ isFull, isDisable, type, href, icon, onClick, badge, filled, style }) {
   return (
     <>
       {href ? <Link
         className={`relative size-11 flex justify-center items-center transition-hover duration-700 ${filled ? "bg-[#303030] hover:bg-white text-[#AAAAAA] hover:text-black" : "border border-[#414141]"}  rounded-xl ${isFull
-          && "w-full"}`}
+          && "w-full"} ${style}`}
         href={href}>
         {icon}
         {badge ? <span className="size-2 rounded-full bg-[#FF5C5C] absolute -right-1 bottom-0">{badge}</span> : ""}
       </Link> : <button
         className={`relative size-11 flex justify-center items-center transition-hover duration-700 ${filled ? "bg-[#303030] hover:bg-white text-[#AAAAAA] hover:text-black" : "border border-[#414141]"} rounded-xl ${isFull
-          && "w-full"} ${isDisable && "!bg-[#292929] [hover:bg-[#303030] hover:text-[#AAAAAA]"}`}
+          && "w-full"} ${isDisable && "!bg-[#292929] [hover:bg-[#303030] hover:text-[#AAAAAA]"} ${style}`}
         type={type}
         disabled={isDisable}
         onClick={onClick}

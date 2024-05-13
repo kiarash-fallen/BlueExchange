@@ -38,31 +38,31 @@ const items = [
         subItems: [
             {
                 name: "مشخصات کاربری",
-                url: "/dasboard/account/profile",
+                url: "/dashboard/account/profile",
                 icon: <UserEdit />,
                 hasArrow: false,
             },
             {
                 name: "حساب های بانکی",
-                url: "/dasboard/account/banck-accounts",
+                url: "/dashboard/account/bank-accounts",
                 icon: <Bank />,
                 hasArrow: false,
             },
             {
                 name: "هشدار قیمت",
-                url: "/dasboard/account/price-warning",
+                url: "/dashboard/account/price-warning",
                 icon: <Bell2 />,
                 hasArrow: false,
             },
             {
                 name: "مدیریت آدرس",
-                url: "/dasboard/account/adress-managment",
+                url: "/dashboard/account/adress-managment",
                 icon: <Marker />,
                 hasArrow: false,
             },
             {
                 name: "تنظیمات",
-                url: "/dasboard/account/setting",
+                url: "/dashboard/account/setting",
                 icon: <Setting />,
                 hasArrow: false,
             },

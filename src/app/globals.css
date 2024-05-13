@@ -155,7 +155,9 @@ body {
   .box-11 {
     @apply bg-[#262626] p-4 rounded-4xl;
   }
-
+  .box-12 {
+    @apply bg-[#262626] p-4 rounded-xl;
+  }
   .title-text-1 {
     @apply text-white font-semibold text-2xl;
   }
