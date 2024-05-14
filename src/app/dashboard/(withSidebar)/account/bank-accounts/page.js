@@ -1,9 +1,9 @@
 import React from 'react'
 import Wallet from '../../../../../../components/ui/icons/Wallet'
-import Add from '../../../../../../components/ui/icons/Add'
 import CloseCircle from '../../../../../../components/ui/icons/CloseCircle'
 import UserCreditCart from '../../../../../../components/dashboard/account/UserCreditCart'
 import MoneyCheckEdit from '../../../../../../components/ui/icons/MoneyCheckEdit'
+import AddCreditCart from '../../../../../../components/dashboard/account/AddCreditCart'
 
 function page() {
     return (
@@ -14,10 +14,7 @@ function page() {
                         <Wallet />
                         <span className='mr-2'>کارت های بانکی</span>
                     </span>
-                    <button type='button' className='text-[#22F38F] flex items-center'>
-                        <Add />
-                        <span className="mr-2">افزودن کارت</span>
-                    </button>
+                    <AddCreditCart />
                 </div>
                 <UserCreditCart />
                 <div className='flex flex-col justify-center items-center text-[#AAAAAA] py-10'>
@@ -31,10 +28,7 @@ function page() {
                         <MoneyCheckEdit />
                         <span className='mr-2'>شبا های بانکی</span>
                     </span>
-                    <button type='button' className='text-[#22F38F] flex items-center'>
-                        <Add />
-                        <span className="mr-2">افزودن کارت</span>
-                    </button>
+                    <AddCreditCart />
                 </div>
                 <UserCreditCart />
                 <div className='flex flex-col justify-center items-center text-[#AAAAAA] py-10'>
