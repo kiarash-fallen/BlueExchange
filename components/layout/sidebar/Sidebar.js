@@ -22,6 +22,7 @@ import Bank from '../../ui/icons/Bank';
 import Bell2 from '../../ui/icons/Bell2';
 import Marker from '../../ui/icons/Marker';
 import Setting from '../../ui/icons/Setting';
+import Exchange from '../../ui/icons/Exchange';
 
 const items = [
     {
@@ -106,9 +107,9 @@ const items = [
         hasArrow: true,
         subItems: [
             {
-                name: "میزان دارایی",
+                name: "مبدل ارزی",
                 url: "/dashboard/trade/exchange",
-                icon: <PiggyBank />,
+                icon: <Exchange />,
             },
             {
                 name: "معامله آسان",
@@ -138,7 +139,7 @@ const items = [
     },
     {
         name: "دعوت دوستان",
-        url: "/dashboard/invite-friends",
+        url: "/dashboard/invite-friend",
         icon: <UserAdd />,
         hasArrow: false,
     },

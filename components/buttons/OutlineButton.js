@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react'
 
-function OutlineButton({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor, iconCenter }) {
+function OutlineButton({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor, iconCenter, style }) {
   return (
     <>
       {href ? (
         <Link
           className={`hover-animation relative inline-block rounded-2xl border border-[#484848] text-white
-          px-5 py-2 ${isFull ? "w-full" : "w-auto"}`}
+          px-5 py-2 ${isFull ? "w-full" : "w-auto"} ${style}`}
           href={href}
         >
           <span className={`flex justify-center items-center ${!icon && "justify-center"}`} >
@@ -21,7 +21,7 @@ function OutlineButton({ children, color, hover, isDisable, type, size, href, ha
         </Link >
       ) : (
         <button
-          className={`hover-animation relative inline-block rounded-2xl border border-[#484848] text-white px-5 py-2 ${isFull ? "w-full" : "w-auto"} ${active && activeColor}`}
+          className={`hover-animation relative inline-block rounded-2xl border border-[#484848] text-white px-5 py-2 ${isFull ? "w-full" : "w-auto"} ${active && activeColor} ${style}`}
           type={type}
           disabled={isDisable}
           onClick={onClick}
