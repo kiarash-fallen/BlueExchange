@@ -12,7 +12,7 @@ function page() {
             <div>
                 <div className="box-6 ">
                     <PanelTabs4
-                        btnFull={true}
+                        widthFull={true}
                         list={[
                             { name: "برداشت تومان", content: <WithdrawalToman /> },
                             { name: "برداشت تتر", content: <WithdrawalTeter /> },

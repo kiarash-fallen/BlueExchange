@@ -6,9 +6,8 @@ const Force = () => {
   return (
     <>
       <div className="w-full mx-auto h-0.5 bg-[#484848] -mt-[25px]"></div>
-      <div className="mt-4 bg-[#565656] p-1 flex rounded-xl">
+      <div className="mt-4 p-1 flex rounded-xl">
         <PanelTabs
-          bgActive={true}
           widthFull={true}
           childWidth="w-1/2"
           list={[{ name: "فروش" }, { name: "خرید" }]}
