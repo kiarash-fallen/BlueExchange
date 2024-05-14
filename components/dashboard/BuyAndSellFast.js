@@ -12,6 +12,7 @@ function BuyAndSellFast() {
             <HeaderCart title="خرید و فروش سریع" icon={<MoneyCheckEdit />} href="/" />
             <div className="[&>*]:mt-3">
                 <Select
+
                     title="0 تومان"
                     hasRightIcon={true}
                     icon={<span className="size-[30px] text-white rounded-3xl bg-[#627EEA] flex justify-center items-center
