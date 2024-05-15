@@ -1,15 +1,12 @@
 "use client"
 import React, { useState } from 'react'
-import Select from '../ui/Select'
 import RangeSlider from "react-range-slider-input";
-import IconButton2 from '../buttons/IconButton2';
 import UpDownArrow from '../ui/icons/UpDownArrow';
 import IconButton from '../buttons/IconButton';
 import SecondButton from '../buttons/SecondButton';
 import Input from '../input/Input';
-import Down from '../ui/icons/Down';
 import ArrowDown from '../ui/icons/ArrowDown';
-// import "./style.css";
+import "./style.css";
 
 function ExchangeCart() {
     const type = "fdf"
@@ -32,9 +29,9 @@ function ExchangeCart() {
                     </span>
                     <ArrowDown />
                 </span>} />
-            {/* <div className="bg-[#303030] rounded-xl w-full h-3 mt-3"> */}
-            {/* <RangeSlider /> */}
-            {/* </div> */}
+            <div className="bg-[#303030] rounded-xl w-full h-3 mt-3">
+                <RangeSlider />
+            </div>
             <div className="flex justify-center">
                 <IconButton icon={<UpDownArrow />} filled={true} />
             </div>
