@@ -1,10 +1,23 @@
 import Check from "../ui/icons/Check";
 
-const Checkbox = ({ checked, disabled, defaultChecked, id, label, onChange }) => {
+const Checkbox = ({ checked, disabled, defaultChecked, id, label, onChange, type }) => {
     return <>
-        <div className="relative">
+
+        {type === "outline" ? <div className="relative">
             <input
-                className="peer relative appearance-none shrink-0 size-5 rounded mt-1 bg-[#565656] focus:outline-none checked:bg-[#7569FF] border-0 cursor-pointer"
+                className={`peer relative appearance-none shrink-0 size-5 rounded mt-1 focus:outline-none checked:bg-white cursor-pointer border border-[#464646]`}
+                type="checkbox"
+                id={id}
+                checked={checked}
+                defaultChecked={defaultChecked}
+                disabled={disabled}
+                onChange={onChange}
+            />
+            <Check style={"absolute inset-0 right-[0.5px] w-4 h-5 pointer-events-none hidden peer-checked:block stroke-red-500 mt-1 outline-none"} />
+
+        </div> : <div className="relative">
+            <input
+                className={`peer relative appearance-none shrink-0 size-5 rounded mt-1 bg-[#565656] focus:outline-none checked:bg-[#7569FF] border-0 cursor-pointer `}
                 type="checkbox"
                 id={id}
                 checked={checked}
@@ -13,7 +26,8 @@ const Checkbox = ({ checked, disabled, defaultChecked, id, label, onChange }) =>
                 onChange={onChange}
             />
             <Check style={"absolute inset-0 right-[0.5px] w-4 h-5 pointer-events-none hidden peer-checked:block stroke-white mt-1 outline-none"} />
-        </div>
+        </div>}
+
 
         <label htmlFor={id}>
             {label}

@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from 'react'
 
-function PanelTabs4({ list, btnFull }) {
+function PanelTabs4({ list, btnFull, color }) {
     const [active, setActive] = useState(0);
     return (
         <>
             <div className='flex justify-center'>
-                <span className={`${btnFull ? "w-full flex" : "inline-flex"} bg-[#2C2C2C] text-white p-1 rounded-xl`}>
+                <span className={`${btnFull ? "w-full flex" : "inline-flex"} bg-[#2C2C2C] text-white p-1 rounded-xl ${color}`}>
                     {list.map((item, i) => <button
                         key={item.name}
                         type='button'

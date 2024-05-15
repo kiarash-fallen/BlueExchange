@@ -10,10 +10,12 @@ const Select = ({ title, hasLeftIcon, hasRightIcon, icon, bgColor, style }) => {
             onClick={() => setOpen(prev => !prev)}
             className={`w-full flex items-center justify-between relative ${bgColor ? bgColor : 'bg-[#3A3A3A]'} rounded-xl  border border-[#3A3A3A] px-4 py-2 peer text-[#CCCCCC] ${style}`}>
             <span className="flex items-center text-sm ">
-                <span className="ml-4 text-sm mx-2">{title}</span>
                 {hasLeftIcon ? <span className=''>
                     {icon}
                 </span> : ""}
+
+                <span className="ml-4 text-sm mx-2">{title}</span>
+
             </span>
             <span className="flex items-center">
                 {hasRightIcon ? <span className='mx-2 flex items-center'>

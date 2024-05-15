@@ -13,7 +13,7 @@ function AuthenticationCart() {
                 icon={<IdBadge />}
                 href="/" />
             <Stepper active={1} title1={"احراز هویت"} title2={"احراز هویت کاربردی"} title3={"احراز هویت پیشرفته"} />
-            <SecondButton full={true} type="button" typeBtn="filled" color="border border-[#2D74FF]" radius="rounded-xl">
+            <SecondButton full={true} type="button" typeBtn="filled" color="border border-white !py-2" radius="rounded-xl">
                 <span className="flex items-center text-white">
                     <span>تکمیل احراز هویت</span>
                     <LeftArrow />
