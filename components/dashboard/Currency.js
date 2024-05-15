@@ -14,7 +14,7 @@ function Currency() {
                 style={"!rounded-3xl"}
                 icon={<Image src={Ustd} alt='ustd' width="24" height="24" />} />
             <Select
-                title="تتر"
+                title="24 ساعته"
                 hasLeftIcon={true}
                 style={"!rounded-3xl"}
                 icon={<Calendar />} />
