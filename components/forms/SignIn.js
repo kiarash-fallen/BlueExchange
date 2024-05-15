@@ -1,15 +1,16 @@
-"use client"
-import React, { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import InvisibleEye from '../ui/icons/InvisibleEye'
-import ArrowDown from '../ui/icons/ArrowDown'
-import Button from '../buttons/Button'
-import Image from 'next/image'
-import Eye from '../../public/assests/Icons/Eye'
-import LeftArrow2 from '../ui/icons/LeftArrow2'
+"use client";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import InvisibleEye from "../ui/icons/InvisibleEye";
+import ArrowDown from "../ui/icons/ArrowDown";
+import Button from "../buttons/Button";
+import Image from "next/image";
+import Eye from "../../public/assests/Icons/Eye";
+import LeftArrow2 from "../ui/icons/LeftArrow2";
+import Input5 from "../input/Input5";
 
 const SignIn = () => {
-  const [type, setType] = useState(true)
+  const [type, setType] = useState(true);
   const {
     register,
     handleSubmit,
@@ -18,29 +19,32 @@ const SignIn = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-  }
+  };
   return (
     <form
       className="grid grid-cols-2 grid-rows-4 justify-between"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="relative w-[239px]">
-        <input
-          id="email"
-          type="email"
-          {...register("email", { required: true })}
-          className="peer w-full rounded-2xl focus:border-white bg-[#252525] border border-[#AAAAAA] px-3 py-4 outline-none placeholder:focus:text-white placeholder:text-[#AAAAAA] "
-          placeholder="مثال : dakjsbd@email.com"
-        />
-        <label
-          htmlFor="email"
-          className="absolute -top-3 right-3 text-[#AAAAAA] px-1 bg-[#252525] peer-focus:text-white"
-        >
-          <span>ایمیل شما</span>
-          {errors.password && <span className="text-red-700">*</span>}
-        </label>
-      </div>
-      <div className="relative">
+      <Input5
+        register={register}
+        errors={errors}
+        type="email"
+        id="email"
+        placeHolder="مثال : dakjsbd@email.com"
+        borderText="ایمیل شما"
+        width="w-[239px]"
+      />
+      <Input5
+        register={register}
+        errors={errors}
+        id="email"
+        placeHolder=""
+        borderText="کلمه عبور"
+        changeType={true}
+        active={<Eye />}
+        deActive={<InvisibleEye />}
+      />
+      {/* <div className="relative">
         <input
           id="password"
           {...register("password", { required: true })}
@@ -61,7 +65,7 @@ const SignIn = () => {
         >
           {type ? <InvisibleEye /> : <Eye />}
         </label>
-      </div>
+      </div> */}
       <button className="flex items-center col-start-2 h-fit w-fit mt-4">
         <span>رمز عبور خود را فراموش کردم</span>
         <Image
@@ -89,6 +93,5 @@ const SignIn = () => {
       </div>
     </form>
   );
-}
-export default SignIn
-
+};
+export default SignIn;
