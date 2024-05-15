@@ -62,7 +62,6 @@ const BuyDigitalCurrency = () => {
           {
             sellBuy ? <SellDCs/> :<BuyDCs />
           }
-          
         </div>
       </div>
       <div className="w-[45%]">
