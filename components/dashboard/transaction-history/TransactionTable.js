@@ -7,6 +7,7 @@ import Eye from '../../../public/assests/Icons/Eye'
 import EmptyState from '../../ui/EmptyState'
 import DashboardTable from '../../table/DashboardTable'
 import Calendar from '../../ui/icons/Calendar'
+import ThirdButton from '../../buttons/ThirdButton'
 
 const headerItems1 = [
     { id: 0, name: "تعداد" },
@@ -32,9 +33,10 @@ const headerItems3 = [
     { id: 0, name: "تعداد" },
     { id: 1, name: "نرخ ( تومان )" },
     { id: 2, name: "مبلغ کل ( تومان )" },
-    { id: 3, name: "زمان" },
+    { id: 3, name: "نوع" },
+    { id: 4, name: "زمان" },
     { id: 5, name: "وضعیت" },
-    { id: 4, name: "رسید" },
+    { id: 6, name: "رسید" },
 ];
 
 const headerItems4 = [
@@ -46,6 +48,17 @@ const headerItems4 = [
     { id: 7, name: "زمان" },
     { id: 8, name: "وضعیت" },
     { id: 9, name: "رسید" },
+];
+
+const headerItems6 = [
+    { id: 0, name: "تعداد" },
+    { id: 1, name: "نرخ ( تومان )" },
+    { id: 2, name: "مبلغ کل ( تومان )" },
+    { id: 3, name: "زمان" },
+    { id: 7, name: "نوع" },
+    { id: 6, name: "در صد تکمیل" },
+    { id: 5, name: "وضعیت" },
+    { id: 4, name: "رسید" },
 ];
 
 const headerItems5 = [
@@ -66,20 +79,8 @@ const data1 = [
 ];
 
 
-const data2 = [
-    { id: 0, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", },
-    { id: 1, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", },
-    { id: 2, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", },
-    { id: 3, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", },
-    { id: 4, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", },
-];
-
 const data4 = [
-    { id: 0, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", operation: "انجام شده" },
-    { id: 1, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", operation: "انجام شده" },
-    { id: 2, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", operation: "انجام شده" },
-    { id: 3, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", operation: "انجام شده" },
-    { id: 4, value: "560.000 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", operation: "انجام شده" },
+    { id: 0, number: 1, value: "560.000 ت", allValue: "61.200 ت", kind: "فروش", trackingCode: "54873219841", time: "12 مرداد - 1402", condition: "بسته شده", percentage: "%36" },
 ];
 
 const data3 = [
@@ -89,6 +90,8 @@ function TransactionTable() {
     const [headerItems, setHeaderItems] = useState(headerItems1);
     const [data, setData] = useState(data1);
     const [select, setSelect] = useState(1);
+    const [currency, setCurrency] = useState("teter");
+    const [trade, setTrade] = useState("معامله ها")
     return (
         <div className="box-6 h-[calc(100vh-8rem)]">
             <div className="flex justify-between">
@@ -106,41 +109,59 @@ function TransactionTable() {
                             {
                                 id: 1, name: 'تاریخچه معاملات آسن تتر', action: () => {
                                     setSelect(1)
-                                    setHeaderItems(headerItems1);
-                                    setData(data1);
+                                    setHeaderItems(() => headerItems1);
                                 }
                             },
                             {
                                 id: 2, name: 'تاریخچه واریز و برداشت', action: () => {
                                     setSelect(2)
-                                    setHeaderItems(headerItems2);
-                                    setData(data2)
+                                    setHeaderItems(() => headerItems2);
                                 }
                             },
                             {
                                 id: 3, name: 'تاریخچه بازار', action: () => {
                                     setSelect(3)
-                                    setHeaderItems(headerItems3);
-                                    setData(data1)
+                                    setHeaderItems(() => headerItems3);
                                 }
                             },
                             {
                                 id: 5, name: 'تاریخچه تبدیل', action: () => {
                                     setSelect(4)
-                                    setHeaderItems(headerItems4);
-                                    setData(data2)
+                                    setHeaderItems(() => headerItems4);
                                 }
                             },
                             {
                                 id: 6, name: 'در حال انجام', action: () => {
                                     setSelect(5)
-                                    setHeaderItems(headerItems5);
+                                    setHeaderItems(() => headerItems5);
                                     setData(data1)
                                 }
                             },
                         ]}
                     />
+                    {select === 2 && <span className='[&>*]:ml-2 flex items-center'>
+                        <span className='w-[0.5px] h-4 mx-2 bg-white'></span>
+                        <ThirdButton active={currency === "teter"} onClick={() => setCurrency("teter")}>
+                            تتر
+                        </ThirdButton>
+                        <ThirdButton active={currency === "toman"} onClick={() => setCurrency("toman")}>
+                            تومان
+                        </ThirdButton>
+                        <ThirdButton active={currency === "other"} onClick={() => setCurrency("other")}>
+                            سایر
+                        </ThirdButton>
+                    </span>}
+                    {select === 3 && <span className='[&>*]:ml-2 flex items-center'>
+                        <span className='w-[0.5px] h-4 mx-2 bg-white'></span>
+                        <ThirdButton active={trade === "معامله ها"} onClick={() => { { setTrade("معامله ها"); setHeaderItems(headerItems3) } }}>
+                            معامله ها
+                        </ThirdButton>
+                        <ThirdButton active={trade === "سفارش ها"} onClick={() => { { setTrade("سفارش ها"); setHeaderItems(headerItems6) } }}>
+                            سفارش ها
+                        </ThirdButton>
+                    </span>}
                 </span>
+
                 <span className='flex [&>*]:mr-3'>
                     <Dropdown title={"تمام وضعیت ها"} bgColor="bg-[#2E2E2E]" textClass="text-[#AAAAAA]" />
                     <Dropdown title={"همه تراکنشات"} bgColor="bg-[#2E2E2E]" textClass="text-[#AAAAAA]" />
@@ -172,13 +193,27 @@ function TransactionTable() {
                             <IconButton icon={<Eye />} style={"!border-white hover:bg-white hover:text-[#363636]"} />
                         </span>
                     </div>)}
-                {select === 3 &&
-                    data?.map(item => <div key={item.id} className="flex justify-between items-center [&>*]:text-center [&>*]:w-[12.5%]">
+                {select === 3 && trade === "معامله ها" &&
+                    data4?.map(item => <div key={item.id} className="flex justify-between items-center [&>*]:text-center [&>*]:w-[12.5%]">
+                        <span>{item.number}</span>
                         <span>{item.value}</span>
                         <span>{item.allValue}</span>
-                        <span className={`${item.kind === "فروش" ? "text-[#FF5C5C]" : "text-[#22F38F]"}`}>{item.kind}</span>
-                        <span>{item.trackingCode}</span>
                         <span>{item.time}</span>
+                        <span className={`${item.kind === "فروش" ? "text-[#FF5C5C]" : "text-[#22F38F]"}`}>{item.kind}</span>
+                        <span>{item.condition}</span>
+                        <span className="flex justify-center">
+                            <IconButton icon={<Eye />} style={"!border-white hover:bg-white hover:text-[#363636]"} />
+                        </span>
+                    </div>)}
+                {select === 3 && trade === "سفارش ها" &&
+                    data4?.map(item => <div key={item.id} className="flex justify-between items-center [&>*]:text-center [&>*]:w-[12.5%]">
+                        <span>{item.number}</span>
+                        <span>{item.value}</span>
+                        <span>{item.allValue}</span>
+                        <span>{item.time}</span>
+                        <span className={`${item.kind === "فروش" ? "text-[#FF5C5C]" : "text-[#22F38F]"}`}>{item.kind}</span>
+                        <span>{item.percentage}</span>
+                        <span>{item.condition}</span>
                         <span className="flex justify-center">
                             <IconButton icon={<Eye />} style={"!border-white hover:bg-white hover:text-[#363636]"} />
                         </span>
@@ -196,8 +231,9 @@ function TransactionTable() {
                             <IconButton icon={<Eye />} style={"!border-white hover:bg-white hover:text-[#363636]"} />
                         </span>
                     </div>)}
+
                 {select === 5 &&
-                    data?.map(item => <div key={item.id} className="flex justify-between items-center [&>*]:text-center [&>*]:w-[12.5%]">
+                    data1?.map(item => <div key={item.id} className="flex justify-between items-center [&>*]:text-center [&>*]:w-[12.5%]">
                         <span>{item.number}</span>
                         <span className={`${item.kind === "فروش" ? "text-[#FF5C5C]" : "text-[#22F38F]"}`}>{item.kind}</span>
                         <span>{item.trackingCode}</span>
