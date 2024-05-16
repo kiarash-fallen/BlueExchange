@@ -15,9 +15,7 @@ function page() {
                     </div>
                     <ExchangeCart />
                 </div>
-
             </div>
-
             <Store height="h-screen" />
         </div>
     )

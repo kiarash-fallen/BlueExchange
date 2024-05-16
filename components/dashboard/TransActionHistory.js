@@ -63,7 +63,7 @@ function TransActionHistory() {
                     </span>
                 </div>)}
             </>} />
-            <EmptyState text="هنوز معامله ای انجام نداده اید !" />
+            {/* <EmptyState text="هنوز معامله ای انجام نداده اید !" /> */}
         </div>
     )
 }

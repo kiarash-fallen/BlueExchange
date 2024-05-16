@@ -51,6 +51,11 @@ body {
   background-size: cover;
 }
 
+.login-bg {
+  background: url("../../public/assests/images/bg/loginPage.png");
+  background-size: cover;
+}
+
 .currency-bg {
   background: url("../../public/assests/Icons/polygan.svg");
   background-size: cover;

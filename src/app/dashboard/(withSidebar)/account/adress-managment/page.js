@@ -36,7 +36,7 @@ function page() {
                     <span className="">گیلان ، رشت ، دریا کنار ، خیابان سفال ، کوچه سوم ، پلاک 4</span>
                     <IconButton type="button" icon={<Delete />} style={"!border-[#FF5C5C] !text-[#FF5C5C] !size-8"} />
                 </div>)}
-                <EmptyState text="هیچ آدرسی قرار نداده اید !" />
+                {/* <EmptyState text="هیچ آدرسی قرار نداده اید !" /> */}
             </>} />
         </>
     )

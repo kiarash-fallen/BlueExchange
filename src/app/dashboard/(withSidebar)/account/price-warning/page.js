@@ -57,7 +57,7 @@ function page() {
                     </span>
                     <IconButton type="button" icon={<Delete />} style={"!border-[#FF5C5C] !text-[#FF5C5C] !size-8"} />
                 </div>)}
-                <EmptyState text="هیچ اعلانی قرار نداده اید !" />
+                {/* <EmptyState text="هیچ اعلانی قرار نداده اید !" /> */}
             </>} />
         </>
     )

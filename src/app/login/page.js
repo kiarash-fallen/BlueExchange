@@ -1,12 +1,12 @@
 import React from "react";
-import ArrowDown from "../../../../components/ui/icons/ArrowDown";
-import BEX from "../../../../components/layout/BEX";
-import Button from "../../../../components/buttons/Button";
-import AddPerson from "../../../../components/ui/icons/AddPerson";
-import Person from "../../../../components/ui/icons/Person";
+import ArrowDown from "../../../components/ui/icons/ArrowDown";
+import BEX from "../../../components/layout/BEX";
+import Button from "../../../components/buttons/Button";
+import AddPerson from "../../../components/ui/icons/AddPerson";
+import Person from "../../../components/ui/icons/Person";
 import Image from "next/image";
-import SignIn from "../../../../components/forms/SignIn";
-import Breadcrums from "../../../../components/ui/Breadcrums";
+import SignIn from "../../../components/forms/SignIn";
+import Breadcrums from "../../../components/ui/Breadcrums";
 
 const Login = () => {
   return (

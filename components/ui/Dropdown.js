@@ -21,7 +21,7 @@ const Dropdown = ({ textClass, title, bgColor, width, rightIcon, leftIcon, items
         </button>
         {open && <div className={`absolute px-4 cursor-pointer rounded-lg mt-2 text-white ${bgColor} ${width}`}>
             <ul>
-                {items.map(item => <li
+                {items?.map(item => <li
                     className="py-4 my-2"
                     key={item.id}
                     onClick={() => {
