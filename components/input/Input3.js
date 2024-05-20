@@ -4,8 +4,8 @@ const Input3 = ({ label, id, focus, color, isDisable, type, placeholder, hasErro
 
     return (
         <div className='relative'>
-            <label htmlFor={id} className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA] focus-within:text-white">{label}</label>
-            <div className={hasError ? "" : `w-full flex items-center justify-between rounded-2xl hover-animation border  focus-within:border- focus-within:border-white bg-[#252525] bg-opacity-[32%] border-[#AAAAAA] px-3 py-4 outline-none placeholder:text-[#AAAAAA] ${style}`}>
+            <label htmlFor={id} className="absolute -top-3 right-3 bg-[#252525] px-1 bg-opacity-100 text-[#AAAAAA] focus-within:text-white text-sm">{label}</label>
+            <div className={hasError ? "" : `w-full flex items-center justify-between rounded-2xl hover-animation border  focus-within:border- focus-within:border-white bg-[#252525] bg-opacity-[32%] border-[#AAAAAA] p-3 lg:px-3 lg:py-4 outline-none placeholder:text-[#AAAAAA] ${style}`}>
                 {hasLeftIcon ? <span className='mr-2'>
                     {clickableIcon ? <button type="button" onClick={handleClick}>{icon}</button> : icon}
                 </span> : ""}

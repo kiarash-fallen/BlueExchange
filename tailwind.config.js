@@ -12,6 +12,17 @@ module.exports = {
       // backgroundImage: {
       //   'home': "url('/public/assets/images/bg/Home Page ( 1440 size ).png')",
       // }
+      screens: {
+        'sm': '360px',
+        // => @media (min-width: 640px) { ... }
+
+        'md': '744px',
+        // => @media (min-width: 1024px) { ... }
+
+        'lg': '1280px',
+        // => @media (min-width: 1280px) { ... }
+        'xl': '1440px',
+      },
       boxShadow: {
         'sidebar': '-4px 0px 16px rgba(0, 0, 0, 0.08)',
         'blue': '0px 8px 12px rgba(45, 116, 255, 0.16), inset 2px 2px 6px rgba(255, 255, 255, 0.12), inset -1px -1px 6px rgba(0, 0, 0, 0.06)',

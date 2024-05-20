@@ -6,7 +6,7 @@ import LeftArrow2 from '../ui/icons/LeftArrow2'
 
 function ContactForm() {
     return (
-        <form className="grid grid-cols-2 gap-4">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
                 <Input3
                     type="text"
@@ -19,13 +19,13 @@ function ContactForm() {
                     label="ایمیل شما :"
                 />
             </div>
-            <div className='col-span-2'>
+            <div className='md:col-span-2'>
                 <Textarea
                     cols={3}
                     rows={3}
                     label="پیام شما"></Textarea>
             </div>
-            <div className='col-span-2'>
+            <div className='md:col-span-2'>
                 <Button
                     isFull={true}
                     type="submit"

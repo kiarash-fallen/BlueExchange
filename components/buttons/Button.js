@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-function Button({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor, iconCenter }) {
+function Button({ children, color, hover, isDisable, type, size, href, hasLeftIcon, hasRightIcon, icon, onClick, radius, borderColor, isFull, active, activeColor, iconCenter, style }) {
   return (
     <>
       {href ? (
@@ -9,13 +9,13 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           className={`hover-animation relative inline-block  bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
-            } ${isFull ? "w-full" : "w-auto"}`}
+            } ${isFull ? "w-full" : "w-auto"} ${style}`}
           href={href}
         >
-          <span className={`flex justify-center items-center ${!icon && "justify-center"}`} >
+          <span className={`flex items-center ${!icon && "justify-start"}`} >
             <span className={` flex items-center ${isFull && icon && !iconCenter && "w-full justify-between"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
-              <span>{children}</span>
+              <span className=''>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
             </span>
 
@@ -30,7 +30,7 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           className={`hover-animation relative inline-block bg-[#323232] border-b-[1.5px] hover:border-b-[1.5px] hover:text-white text-[#AAAAAA]   
          ${radius ? radius : "rounded-[10px]"
             } px-5 py-2 group ${hover} ${borderColor ? "border-[#565656]" : "border-[#414141]"
-            } ${isFull ? "w-full" : "w-auto"} ${active && activeColor}`}
+            } ${isFull ? "w-full" : "w-auto"} ${active && activeColor} ${style}`}
           type={type}
           disabled={isDisable}
           onClick={onClick}
@@ -38,10 +38,9 @@ function Button({ children, color, hover, isDisable, type, size, href, hasLeftIc
           <span className={`flex items-center ${!icon && "justify-center"}`} >
             <span className={`flex items-center ${isFull && icon && !iconCenter && "w-full justify-between"}`}>
               {hasRightIcon ? <span className="ml-2">{icon}</span> : ""}
-              <span className={active && "!text-white"}>{children}</span>
+              <span className={active && "!text-white   "}>{children}</span>
               {hasLeftIcon ? <span className="mr-2">{icon}</span> : ""}
             </span>
-
           </span>
           {active && <span
             className={`w-2/3 h-2 bottom-0 blur-md rounded-xl mx-auto -mb-2 flex ${color}`}

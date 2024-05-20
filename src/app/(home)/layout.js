@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="fa">
       <body className="home-bg">
         <Navbar />
-        <section className="w-[1440px] m-auto px-4">
+        <section className="max-w-[1440px] m-auto px-4">
           {children}
           <ContactUsFooter />
           <Blue />

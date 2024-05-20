@@ -114,7 +114,7 @@ body {
   }
 
   .box {
-    @apply box-background box-shadow-1 border-2 border-[#373737] rounded-[52px] p-8;
+    @apply box-background box-shadow-1 border-2 border-[#373737] rounded-[52px] p-4 xl:p-8;
   }
 
   .box-1 {
