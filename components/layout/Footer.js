@@ -16,18 +16,19 @@ import Linkdin from '../ui/icons/Linkdin'
 function Footer() {
     return (
         <footer className=' mx-4 mt-10 mb-5'>
-            <div className='grid grid-cols-4'>
-
-                <div>
-                    <h3 className="text-[24px] text-white mb-8">بلواکسچنج</h3>
-                    <Button
-                        href="/"
-                        varient="#22F38F"
-                        color="bg-[#22F38F]"
-                        hover="hover:border-[#22F38F]">
-                        کارت هدیه
-                    </Button>
-                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0]">
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+                <div className='justify-self-center md:justify-self-start'>
+                    <h3 className="text-[24px] text-white mb-8 text-center md::text-right">بلواکسچنج</h3>
+                    <div className='flex justify-center md:justify-start'>
+                        <Button
+                            href="/"
+                            varient="#22F38F"
+                            color="bg-[#22F38F]"
+                            hover="hover:border-[#22F38F]">
+                            کارت هدیه
+                        </Button>
+                    </div>
+                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0] [&>*]:text-center md:[&>*]:text-right">
                         <li>
                             <Link href="/">
                                 بلواکسچنج
@@ -58,15 +59,17 @@ function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-[24px] text-white mb-8">منابع راهنمایی بلواکسچنج</h3>
-                    <Button
-                        href="/"
-                        varient="#22F38F"
-                        color="bg-[#22F38F]"
-                        hover="hover:border-[#22F38F]">
-                        مستنات API
-                    </Button>
-                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0]">
+                    <h3 className="text-[24px] text-white mb-8 text-center md::text-right">منابع راهنمایی بلواکسچنج</h3>
+                    <div className='flex justify-center md:justify-start'>
+                        <Button
+                            href="/"
+                            varient="#22F38F"
+                            color="bg-[#22F38F]"
+                            hover="hover:border-[#22F38F]">
+                            مستنات API
+                        </Button>
+                    </div>
+                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0] [&>*]:text-center md:[&>*]:text-right">
                         <li>
                             <Link href="/">
                                 راهنمای کار با بلواکسچنج
@@ -97,15 +100,17 @@ function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-[24px] text-white mb-8">  آکادمی بلواکسچنج</h3>
-                    <Button
-                        href="/"
-                        varient="#22F38F"
-                        color="bg-[#22F38F]"
-                        hover="hover:border-[#22F38F]">
-                        از اینجا شروع کنید
-                    </Button>
-                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0]">
+                    <h3 className="text-[24px] text-white mb-8 text-center md::text-right">  آکادمی بلواکسچنج</h3>
+                    <div className='flex justify-center md:justify-start'>
+                        <Button
+                            href="/"
+                            varient="#22F38F"
+                            color="bg-[#22F38F]"
+                            hover="hover:border-[#22F38F]">
+                            از اینجا شروع کنید
+                        </Button>
+                    </div>
+                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0] [&>*]:text-center md:[&>*]:text-right">
                         <li>
                             <Link href="/">
                                 آخرین اخبار بلواکسچنج
@@ -135,19 +140,21 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 className="text-[24px] text-white mb-8">راه های ارتباطی</h3>
-                    <Button
-                        href="/"
-                        varient="#22F38F"
-                        color="bg-[#22F38F]"
-                        hover="hover:border-[#22F38F]"
-                        hasRightIcon={true}
-                        icon={<Call />}
-                    >
-                        09331809897 - 09938879026
-                    </Button>
-                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0]">
+                <div className='md:col-span-2 lg:col-span-1'>
+                    <h3 className="text-[24px] text-white mb-8 text-center md:text-right">راه های ارتباطی</h3>
+                    <div className='flex justify-center md:justify-start'>
+                        <Button
+                            href="/"
+                            varient="#22F38F"
+                            color="bg-[#22F38F]"
+                            hover="hover:border-[#22F38F]"
+                            hasRightIcon={true}
+                            icon={<Call />}
+                        >
+                            09331809897 - 09938879026
+                        </Button>
+                    </div>
+                    <ul className="mt-4 [&>*]:mb-4 [&>*]:text-[#B0B0B0] flex flex-col items-center md:items-start">
                         <li>
                             <Link href="/" className='flex items-center'>
                                 <Envelope />
@@ -182,11 +189,11 @@ function Footer() {
             <div className='-mt-10 relative'>
                 <Line2 />
             </div>
-            <div className="flex justify-between mt-4">
-                <p className="text-white mt-4">
+            <div className="flex justify-center md:justify-between mt-4">
+                <p className="text-white mt-4 hidden md:block">
                     تمام حقوق مادی و معنوی این اثر برای بیت کیو محفوظ است .
                 </p>
-                <ul className='flex [&>*]:mr-4'>
+                <ul className='flex [&>*]:mr-4 mt-4 md:mt-0'>
                     <li>
                         <IconButton2
                             href="/"
